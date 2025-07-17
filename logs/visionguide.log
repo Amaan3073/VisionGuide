@@ -1,0 +1,1469 @@
+2025-07-17 21:45:27.054 | INFO     | core.object_detector:__init__:33 - Object detector initialized on cpu
+2025-07-17 21:45:31.743 | INFO     | core.depth_estimator:_load_model:63 - Depth estimation model loaded: MiDaS_small
+2025-07-17 21:45:32.238 | INFO     | core.audio_processor:_initialize_tts:64 - TTS engine initialized successfully
+2025-07-17 21:45:33.794 | INFO     | core.audio_processor:_initialize_speech_recognition:77 - Speech recognition initialized
+2025-07-17 21:45:33.795 | INFO     | core.audio_processor:__init__:46 - Audio processor initialized
+2025-07-17 21:45:33.795 | INFO     | __main__:__init__:36 - VisionGuide AI initialized successfully
+2025-07-17 21:45:34.082 | INFO     | __main__:start_camera:50 - Camera started successfully
+2025-07-17 21:45:34.082 | INFO     | __main__:start:164 - VisionGuide AI started
+2025-07-17 21:45:34.083 | INFO     | __main__:main:211 - VisionGuide AI is running. Press 'q' to quit.
+2025-07-17 21:45:34.410 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:34.514 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:34.618 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:34.721 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:34.824 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:34.927 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:35.030 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:35.133 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:35.236 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:35.339 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:35.441 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:35.545 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:35.649 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:35.753 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:35.856 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:35.960 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:36.063 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:36.166 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:36.270 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:36.373 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:36.476 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:36.579 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:36.683 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:36.786 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:36.890 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:36.993 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:37.310 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:37.310 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:37.413 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:37.517 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:37.621 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:37.725 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:37.827 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:37.930 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:38.033 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:38.136 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:38.239 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:38.342 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:38.445 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:38.548 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:38.651 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:38.755 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:38.860 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:38.964 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:39.067 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:39.170 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:39.274 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:39.377 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:39.480 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:39.583 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:39.685 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:39.789 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:39.894 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:39.997 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:45:40.228 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:40.228 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:40.461 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:40.461 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:40.690 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:40.690 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:40.912 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:40.912 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:41.153 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:41.154 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:41.371 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:41.371 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:41.608 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:41.609 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:41.834 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:41.835 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:42.053 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:42.053 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:42.285 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:42.286 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:42.498 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:42.498 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:42.729 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:42.729 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:42.964 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:42.966 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:43.185 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:43.185 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:43.420 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:43.420 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:43.651 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:43.651 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:43.879 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:43.879 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:44.096 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:44.096 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:44.319 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:44.319 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:44.550 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:44.550 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:44.769 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:44.769 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:44.997 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:44.997 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:45.230 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:45.230 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:45.462 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:45.463 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:45.685 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:45.685 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:45.908 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:45.908 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:46.134 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:46.134 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:46.370 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:46.370 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:46.612 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:46.612 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:46.861 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:46.861 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:47.140 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:47.141 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:47.417 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:47.417 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:47.696 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:47.697 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:47.979 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:47.979 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:48.260 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:48.260 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:48.534 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:48.534 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:48.807 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:48.807 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:49.078 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:49.078 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:49.358 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:49.358 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:49.641 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:49.641 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:49.916 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:49.916 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:50.199 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:50.199 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:50.470 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:50.477 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:50.754 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:50.754 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:51.028 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:51.028 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:51.308 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:51.308 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:51.590 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:51.590 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:51.861 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:51.861 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:52.135 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:52.135 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:52.420 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:52.420 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:52.697 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:52.697 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:52.977 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:52.978 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:53.245 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:53.245 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:53.517 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:53.517 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:53.809 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:53.810 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:54.091 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:54.091 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:54.375 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:54.375 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:54.660 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:54.660 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:54.935 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:54.942 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:55.211 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:55.211 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:55.493 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:55.493 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:55.768 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:55.776 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:56.048 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:56.048 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:56.333 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:56.333 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:56.605 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:56.605 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:56.876 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:56.878 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:57.143 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:45:57.143 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:45:57.227 | INFO     | __main__:main:218 - Received interrupt signal
+2025-07-17 21:45:57.745 | INFO     | __main__:stop_camera:62 - Camera stopped
+2025-07-17 21:45:57.745 | INFO     | core.audio_processor:stop:195 - Audio processor stopped
+2025-07-17 21:45:57.749 | INFO     | __main__:stop:184 - VisionGuide AI stopped
+2025-07-17 21:45:57.749 | INFO     | __main__:main:223 - VisionGuide AI shutdown complete
+2025-07-17 21:49:09.287 | INFO     | core.object_detector:__init__:33 - Object detector initialized on cpu
+2025-07-17 21:49:14.055 | INFO     | core.depth_estimator:_load_model:63 - Depth estimation model loaded: MiDaS_small
+2025-07-17 21:49:14.541 | INFO     | core.audio_processor:_initialize_tts:64 - TTS engine initialized successfully
+2025-07-17 21:49:16.126 | INFO     | core.audio_processor:_initialize_speech_recognition:77 - Speech recognition initialized
+2025-07-17 21:49:16.126 | INFO     | core.audio_processor:__init__:46 - Audio processor initialized
+2025-07-17 21:49:16.126 | INFO     | __main__:__init__:36 - VisionGuide AI initialized successfully
+2025-07-17 21:49:16.436 | INFO     | __main__:start_camera:50 - Camera started successfully
+2025-07-17 21:49:16.436 | INFO     | __main__:start:164 - VisionGuide AI started
+2025-07-17 21:49:16.436 | INFO     | __main__:main:211 - VisionGuide AI is running. Press 'q' to quit.
+2025-07-17 21:49:16.803 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:16.907 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:17.011 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:17.115 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:17.219 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:17.323 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:17.427 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:17.531 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:17.634 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:17.736 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:17.840 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:17.944 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:18.047 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:18.153 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:18.256 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:18.360 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:18.464 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:18.567 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:18.671 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:18.775 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:18.879 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:18.984 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:19.087 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:19.191 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:19.294 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:19.398 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:19.708 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:19.708 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:19.813 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:19.917 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:20.020 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:20.123 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:20.226 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:20.330 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:20.433 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:20.537 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:20.641 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:20.744 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:20.848 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:20.952 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:21.056 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:21.160 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:21.263 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:21.367 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:21.471 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:21.574 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:21.678 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:21.781 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:21.885 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:21.988 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:22.092 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:22.196 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:22.301 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:22.405 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: 'AppConfig' object has no attribute 'debug_mode'
+2025-07-17 21:49:22.637 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:22.637 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:22.863 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:22.863 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:23.101 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:23.103 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:23.331 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:23.331 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:23.551 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:23.551 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:23.774 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:23.780 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:23.993 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:23.993 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:24.223 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:24.223 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:24.447 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:24.447 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:24.675 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:24.675 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:24.916 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:24.916 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:25.145 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:25.145 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:25.358 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:25.358 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:25.592 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:25.592 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:25.837 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:25.837 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:26.061 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:26.061 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:26.287 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:26.292 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:26.508 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:26.508 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:26.728 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:26.728 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:26.959 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:26.959 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:27.177 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:27.177 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:27.409 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:27.409 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:27.631 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:27.631 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:27.868 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:27.868 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:28.098 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:28.098 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:28.325 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:28.325 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:28.542 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:28.542 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:28.783 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:28.783 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:28.998 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:28.998 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:29.235 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:29.235 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:29.467 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:29.467 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:29.681 | ERROR    | core.object_detector:recognize_faces:215 - Face recognition failed: No module named 'face_recognition'
+2025-07-17 21:49:29.681 | ERROR    | __main__:run_detection_loop:149 - Detection loop error: '<' not supported between instances of 'AudioMessage' and 'AudioMessage'
+2025-07-17 21:49:29.681 | INFO     | __main__:main:218 - Received interrupt signal
+2025-07-17 21:49:30.261 | INFO     | __main__:stop_camera:62 - Camera stopped
+2025-07-17 21:49:30.261 | INFO     | core.audio_processor:stop:195 - Audio processor stopped
+2025-07-17 21:49:30.266 | INFO     | __main__:stop:184 - VisionGuide AI stopped
+2025-07-17 21:49:30.266 | INFO     | __main__:main:223 - VisionGuide AI shutdown complete
+2025-07-18 00:26:41.093 | INFO     | core.object_detector:__init__:33 - Object detector initialized on cpu
+2025-07-18 00:26:49.780 | INFO     | core.depth_estimator:_load_model:63 - Depth estimation model loaded: MiDaS_small
+2025-07-18 00:26:50.693 | INFO     | core.audio_processor:_initialize_tts:81 - TTS engine initialized successfully
+2025-07-18 00:26:53.392 | INFO     | core.audio_processor:_initialize_speech_recognition:94 - Speech recognition initialized
+2025-07-18 00:26:53.392 | INFO     | core.audio_processor:__init__:63 - Audio processor initialized
+2025-07-18 00:26:53.408 | WARNING  | core.object_detector:__init__:175 - Face recognition module not available - skipping face recognition features
+2025-07-18 00:26:53.414 | INFO     | __main__:__init__:36 - VisionGuide AI initialized successfully
+2025-07-18 00:26:54.055 | INFO     | __main__:start_camera:50 - Camera started successfully
+2025-07-18 00:26:54.055 | INFO     | __main__:start:164 - VisionGuide AI started
+2025-07-18 00:26:54.055 | INFO     | __main__:main:211 - VisionGuide AI is running. Press 'q' to quit.
+2025-07-18 00:27:57.851 | INFO     | __main__:main:218 - Received interrupt signal
+2025-07-18 00:27:58.450 | INFO     | __main__:stop_camera:62 - Camera stopped
+2025-07-18 00:27:58.450 | INFO     | core.audio_processor:stop:212 - Audio processor stopped
+2025-07-18 00:27:58.452 | INFO     | __main__:stop:184 - VisionGuide AI stopped
+2025-07-18 00:27:58.452 | INFO     | __main__:main:223 - VisionGuide AI shutdown complete
+2025-07-18 00:29:08.739 | INFO     | core.object_detector:__init__:33 - Object detector initialized on cpu
+2025-07-18 00:29:18.360 | INFO     | core.depth_estimator:_load_model:63 - Depth estimation model loaded: MiDaS_small
+2025-07-18 00:29:19.247 | INFO     | core.audio_processor:_initialize_tts:81 - TTS engine initialized successfully
+2025-07-18 00:29:21.387 | INFO     | core.audio_processor:_initialize_speech_recognition:94 - Speech recognition initialized
+2025-07-18 00:29:21.387 | INFO     | core.audio_processor:__init__:63 - Audio processor initialized
+2025-07-18 00:29:21.403 | WARNING  | core.object_detector:__init__:175 - Face recognition module not available - skipping face recognition features
+2025-07-18 00:29:21.405 | INFO     | __main__:__init__:36 - VisionGuide AI initialized successfully
+2025-07-18 00:29:22.004 | INFO     | __main__:start_camera:50 - Camera started successfully
+2025-07-18 00:29:22.004 | INFO     | __main__:start:164 - VisionGuide AI started
+2025-07-18 00:29:22.004 | INFO     | __main__:main:211 - VisionGuide AI is running. Press 'q' to quit.
+2025-07-18 00:30:39.771 | INFO     | __main__:main:218 - Received interrupt signal
+2025-07-18 00:30:40.852 | INFO     | __main__:stop_camera:62 - Camera stopped
+2025-07-18 00:30:40.854 | INFO     | core.audio_processor:stop:212 - Audio processor stopped
+2025-07-18 00:30:40.855 | INFO     | __main__:stop:184 - VisionGuide AI stopped
+2025-07-18 00:30:40.856 | INFO     | __main__:main:223 - VisionGuide AI shutdown complete
+2025-07-18 00:55:15.006 | INFO     | core.object_detector:__init__:33 - Object detector initialized on cpu
+2025-07-18 00:55:25.207 | INFO     | core.depth_estimator:_load_model:63 - Depth estimation model loaded: MiDaS_small
+2025-07-18 00:55:26.575 | INFO     | core.audio_processor:_initialize_tts:81 - TTS engine initialized successfully
+2025-07-18 00:55:29.360 | INFO     | core.audio_processor:_initialize_speech_recognition:94 - Speech recognition initialized
+2025-07-18 00:55:29.360 | INFO     | core.audio_processor:__init__:63 - Audio processor initialized
+2025-07-18 00:55:29.360 | WARNING  | core.object_detector:__init__:175 - Face recognition module not available - skipping face recognition features
+2025-07-18 00:55:29.360 | INFO     | __main__:__init__:37 - VisionGuide AI initialized successfully
+2025-07-18 00:55:30.094 | INFO     | __main__:start_camera:51 - Camera started successfully
+2025-07-18 00:55:30.094 | INFO     | core.audio_processor:_listen_for_commands:216 - Voice command listener started
+2025-07-18 00:55:30.094 | INFO     | core.audio_processor:start:196 - Audio processor started
+2025-07-18 00:55:30.094 | INFO     | __main__:start:195 - VisionGuide AI started
+2025-07-18 00:55:30.094 | INFO     | __main__:main:256 - VisionGuide AI is running. Press 'q' to quit.
+2025-07-18 00:55:31.253 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:55:33.332 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:55:33.737 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:55:34.270 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:55:36.663 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:55:38.499 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 00:55:39.468 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:55:39.631 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:55:42.810 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:55:42.903 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 00:55:43.955 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:55:46.019 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:55:46.042 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:55:46.957 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:55:49.041 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:55:50.002 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 00:55:51.019 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:55:52.152 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 00:55:53.103 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:55:54.053 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:55:55.391 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see person and bottle. person is closest at 0.7 steps bottle is furthest at 0.7 steps.
+2025-07-18 00:55:56.690 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 00:55:57.768 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:55:58.637 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 00:55:59.850 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:56:00.769 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:01.737 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 00:56:02.868 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:56:03.782 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:04.850 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:56:05.865 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:56:06.891 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:07.905 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see person and bottle. person is closest at 0.7 steps bottle is furthest at 0.7 steps.
+2025-07-18 00:56:08.985 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:56:09.955 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:11.056 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 00:56:14.203 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:56:14.358 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 00:56:15.354 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:17.273 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 00:56:18.765 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 00:56:19.785 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:20.423 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see person and cell phone. person is closest at 0.7 steps cell phone is furthest at 0.7 steps.
+2025-07-18 00:56:21.863 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:56:22.778 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:23.527 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see person and cell phone. person is closest at 0.7 steps cell phone is furthest at 0.7 steps.
+2025-07-18 00:56:24.864 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:56:25.761 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:26.595 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:56:27.858 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:56:28.792 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:29.780 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:56:31.228 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 00:56:32.223 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:32.831 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:56:34.310 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:56:35.218 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:35.979 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see person and bowl. person is closest at 0.7 steps bowl is furthest at 0.7 steps.
+2025-07-18 00:56:37.296 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:56:38.239 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:39.200 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:56:40.320 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:56:41.210 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:42.319 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 00:56:43.999 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:56:44.887 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:45.466 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 00:56:48.506 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:56:49.150 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 00:56:50.159 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:51.543 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:56:52.243 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:56:53.167 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:54.588 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 00:56:55.252 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:56:56.164 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:56:57.807 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:56:58.245 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:56:59.110 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:01.004 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 00:57:03.695 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 00:57:04.095 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:57:04.749 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:06.845 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:57:07.120 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:57:07.750 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:10.287 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:57:10.909 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 00:57:11.970 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:13.457 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:57:14.067 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:57:15.225 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:16.667 | INFO     | __main__:run_detection_loop:135 - Audio description: You are in a indoor environment. I can see a toilet. toilet is closest at 0.7 steps On your right: toilet.
+2025-07-18 00:57:18.034 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 00:57:19.100 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:19.671 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:57:21.208 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:57:22.253 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:22.686 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:57:24.337 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:57:25.291 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:25.819 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:57:27.378 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:57:28.316 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:28.816 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a bowl. bowl is closest at 0.7 steps On your right: bowl.
+2025-07-18 00:57:30.399 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:57:31.311 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:31.927 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:57:33.402 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:57:34.316 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:35.091 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:57:36.402 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:57:37.316 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:38.064 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:57:40.332 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 00:57:41.035 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:57:41.332 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:43.414 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:57:44.271 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:57:44.356 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:46.439 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:57:47.332 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:47.431 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:57:49.511 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:57:50.429 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:50.554 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:57:53.118 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:57:53.723 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:57:54.035 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:56.105 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:57:56.867 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:57:56.998 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:57:59.599 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 00:57:59.969 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:58:00.615 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:58:02.701 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:58:03.046 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:58:03.584 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:58:05.651 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:58:06.215 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:58:06.556 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:58:08.637 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:58:09.204 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:58:09.551 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:58:11.616 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:58:12.304 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:58:12.519 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:58:15.167 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 00:58:15.395 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:58:16.271 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:58:18.356 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:58:18.483 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:58:19.271 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:58:21.580 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:58:22.134 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 00:58:23.012 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:58:24.697 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 00:58:25.090 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:58:25.982 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:58:27.802 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:58:28.068 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:58:28.951 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:58:32.241 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 00:58:32.575 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 00:58:33.619 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 00:58:33.859 | INFO     | __main__:run_detection_loop:159 - Quit key pressed
+2025-07-18 00:58:34.602 | INFO     | __main__:stop_camera:63 - Camera stopped
+2025-07-18 00:58:36.360 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 00:58:36.361 | INFO     | core.audio_processor:_listen_for_commands:247 - Voice command listener stopped
+2025-07-18 00:58:37.622 | INFO     | core.audio_processor:stop:212 - Audio processor stopped
+2025-07-18 00:58:37.639 | INFO     | __main__:stop:216 - VisionGuide AI stopped
+2025-07-18 00:58:37.640 | INFO     | __main__:main:274 - VisionGuide AI shutdown complete
+2025-07-18 01:01:46.455 | INFO     | core.object_detector:__init__:33 - Object detector initialized on cpu
+2025-07-18 01:01:55.427 | INFO     | core.depth_estimator:_load_model:63 - Depth estimation model loaded: MiDaS_small
+2025-07-18 01:01:56.293 | INFO     | core.audio_processor:_initialize_tts:81 - TTS engine initialized successfully
+2025-07-18 01:01:58.440 | INFO     | core.audio_processor:_initialize_speech_recognition:94 - Speech recognition initialized
+2025-07-18 01:01:58.440 | INFO     | core.audio_processor:__init__:63 - Audio processor initialized
+2025-07-18 01:01:58.440 | WARNING  | core.object_detector:__init__:175 - Face recognition module not available - skipping face recognition features
+2025-07-18 01:01:58.440 | INFO     | __main__:__init__:37 - VisionGuide AI initialized successfully
+2025-07-18 01:01:59.103 | INFO     | __main__:start_camera:51 - Camera started successfully
+2025-07-18 01:01:59.103 | INFO     | core.audio_processor:_listen_for_commands:216 - Voice command listener started
+2025-07-18 01:01:59.103 | INFO     | core.audio_processor:start:196 - Audio processor started
+2025-07-18 01:01:59.103 | INFO     | __main__:start:195 - VisionGuide AI started
+2025-07-18 01:01:59.109 | INFO     | __main__:main:256 - VisionGuide AI is running. Press 'q' to quit.
+2025-07-18 01:02:00.051 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:02.132 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:02:02.701 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:02:03.018 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:05.826 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:02:06.250 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:02:07.243 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:08.754 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:02:10.496 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:02:11.659 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:11.904 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:02:13.744 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:02:14.634 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:15.201 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see person and bottle. person is closest at 0.7 steps bottle is furthest at 0.7 steps.
+2025-07-18 01:02:16.718 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:02:17.667 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:18.243 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see person and bottle. person is closest at 0.7 steps bottle is furthest at 0.7 steps.
+2025-07-18 01:02:20.512 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:02:21.281 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a bottle. bottle is closest at 0.7 steps On your right: bottle.
+2025-07-18 01:02:21.434 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:23.521 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:02:24.393 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a bottle. bottle is closest at 0.7 steps Ahead: bottle.
+2025-07-18 01:02:24.430 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:27.552 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a bottle. bottle is closest at 0.7 steps Ahead: bottle.
+2025-07-18 01:02:28.916 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:02:29.886 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:30.676 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a bottle. bottle is closest at 0.7 steps On your left: bottle.
+2025-07-18 01:02:31.981 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:02:32.952 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:33.759 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a bottle. bottle is closest at 0.7 steps Ahead: bottle.
+2025-07-18 01:02:35.042 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:02:35.977 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:36.867 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:02:38.059 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:02:39.042 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:40.076 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:02:41.951 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:02:42.892 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:43.066 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:02:46.061 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:02:46.187 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:02:47.252 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:49.102 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:02:50.459 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:02:51.428 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:52.257 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:02:53.514 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:02:54.531 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:55.480 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:02:56.616 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:02:57.546 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:02:57.848 | INFO     | __main__:run_detection_loop:166 - Manual scene description triggered
+2025-07-18 01:02:58.692 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:02:59.627 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:03:00.562 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:03:01.183 | INFO     | __main__:run_detection_loop:159 - Quit key pressed
+2025-07-18 01:03:01.887 | INFO     | __main__:stop_camera:63 - Camera stopped
+2025-07-18 01:03:03.483 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:03:03.483 | INFO     | core.audio_processor:_listen_for_commands:247 - Voice command listener stopped
+2025-07-18 01:03:04.905 | INFO     | core.audio_processor:stop:212 - Audio processor stopped
+2025-07-18 01:03:04.910 | INFO     | __main__:stop:216 - VisionGuide AI stopped
+2025-07-18 01:03:04.910 | INFO     | __main__:main:274 - VisionGuide AI shutdown complete
+2025-07-18 01:07:25.867 | INFO     | core.object_detector:__init__:33 - Object detector initialized on cpu
+2025-07-18 01:07:34.893 | INFO     | core.depth_estimator:_load_model:63 - Depth estimation model loaded: MiDaS_small
+2025-07-18 01:07:35.824 | INFO     | core.audio_processor:_initialize_tts:81 - TTS engine initialized successfully
+2025-07-18 01:07:38.028 | INFO     | core.audio_processor:_initialize_speech_recognition:94 - Speech recognition initialized
+2025-07-18 01:07:38.028 | INFO     | core.audio_processor:__init__:63 - Audio processor initialized
+2025-07-18 01:07:38.034 | WARNING  | core.object_detector:__init__:175 - Face recognition module not available - skipping face recognition features
+2025-07-18 01:07:38.034 | INFO     | __main__:__init__:37 - VisionGuide AI initialized successfully
+2025-07-18 01:07:38.649 | INFO     | __main__:start_camera:51 - Camera started successfully
+2025-07-18 01:07:38.661 | INFO     | core.audio_processor:_listen_for_commands:216 - Voice command listener started
+2025-07-18 01:07:38.661 | INFO     | core.audio_processor:start:196 - Audio processor started
+2025-07-18 01:07:38.663 | INFO     | __main__:start:195 - VisionGuide AI started
+2025-07-18 01:07:38.665 | INFO     | __main__:main:256 - VisionGuide AI is running. Press 'q' to quit.
+2025-07-18 01:07:39.823 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:07:41.903 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:07:42.355 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see skis and bottle. skis is closest at 0.7 steps bottle is furthest at 0.7 steps.
+2025-07-18 01:07:42.835 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:07:45.429 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a skis. skis is closest at 0.7 steps On your right: skis.
+2025-07-18 01:07:46.250 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:07:47.105 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:07:48.445 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:07:50.197 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:07:51.044 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:07:51.671 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 01:07:54.204 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:07:54.688 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 01:07:55.218 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:07:57.303 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:07:57.810 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 01:07:58.218 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:00.305 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:08:00.911 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:08:01.330 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:03.409 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:08:03.887 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 01:08:04.324 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:06.415 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:08:07.088 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a bottle. bottle is closest at 0.7 steps On your right: bottle.
+2025-07-18 01:08:07.464 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:09.548 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:08:10.004 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 01:08:10.412 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:12.493 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:08:13.200 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a bottle. bottle is closest at 0.7 steps On your right: bottle.
+2025-07-18 01:08:13.384 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:15.469 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:08:16.455 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a bottle. bottle is closest at 0.7 steps On your right: bottle.
+2025-07-18 01:08:16.478 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:18.572 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:08:19.498 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:19.508 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a bottle. bottle is closest at 0.7 steps On your right: bottle.
+2025-07-18 01:08:22.590 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 01:08:24.090 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:08:25.171 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:25.553 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 01:08:27.250 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:08:28.172 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:28.727 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a bottle. bottle is closest at 0.7 steps On your right: bottle.
+2025-07-18 01:08:30.255 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:08:31.342 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:31.774 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 01:08:33.426 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:08:34.335 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:34.933 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a bottle. bottle is closest at 0.7 steps On your right: bottle.
+2025-07-18 01:08:36.671 | INFO     | core.audio_processor:_listen_for_commands:228 - Voice command detected: 'repeat'
+2025-07-18 01:08:36.671 | INFO     | core.audio_processor:_process_voice_command:257 - Voice command received: repeat
+2025-07-18 01:08:37.769 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:38.160 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a bottle. bottle is closest at 0.7 steps On your right: bottle.
+2025-07-18 01:08:39.879 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:08:40.833 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:41.249 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 01:08:44.252 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 01:08:45.134 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:08:46.200 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:47.565 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:08:48.283 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:08:49.235 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:50.483 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:08:52.282 | INFO     | core.audio_processor:_listen_for_commands:228 - Voice command detected: 'what do you see'
+2025-07-18 01:08:52.282 | INFO     | core.audio_processor:_process_voice_command:257 - Voice command received: what do you see
+2025-07-18 01:08:53.418 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:53.779 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:08:55.503 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:08:56.433 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:08:56.799 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:00.055 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:00.590 | INFO     | core.audio_processor:_listen_for_commands:228 - Voice command detected: 'stop talking'
+2025-07-18 01:09:00.590 | INFO     | core.audio_processor:_process_voice_command:257 - Voice command received: stop talking
+2025-07-18 01:09:02.099 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:03.188 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:04.287 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:09:05.283 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:06.199 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:07.369 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:09:08.280 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:09.349 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 01:09:10.809 | INFO     | core.audio_processor:_listen_for_commands:228 - Voice command detected: 'trypsin'
+2025-07-18 01:09:10.810 | INFO     | core.audio_processor:_process_voice_command:257 - Voice command received: trypsin
+2025-07-18 01:09:11.854 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:12.298 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:13.933 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:09:14.832 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:15.495 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:17.279 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:09:18.321 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:18.613 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:20.395 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:09:21.306 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:21.743 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:24.752 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:24.757 | INFO     | core.audio_processor:_listen_for_commands:228 - Voice command detected: 'what do you see'
+2025-07-18 01:09:24.757 | INFO     | core.audio_processor:_process_voice_command:257 - Voice command received: what do you see
+2025-07-18 01:09:25.816 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:27.823 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:27.905 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:09:28.779 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:30.887 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:30.940 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:09:31.868 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:34.058 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:35.201 | INFO     | core.audio_processor:_listen_for_commands:228 - Voice command detected: 'what do you see'
+2025-07-18 01:09:35.201 | INFO     | core.audio_processor:_process_voice_command:257 - Voice command received: what do you see
+2025-07-18 01:09:36.225 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:37.141 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:38.300 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:09:39.178 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:40.292 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:41.334 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:09:42.247 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:43.229 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 01:09:44.249 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:09:45.142 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:46.385 | INFO     | __main__:run_detection_loop:135 - Audio description: .
+2025-07-18 01:09:48.917 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:09:49.407 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:49.974 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:52.061 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:09:52.658 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:52.999 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:55.081 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:09:55.697 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:09:55.998 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:09:58.740 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:10:01.714 | DEBUG    | core.audio_processor:_listen_for_commands:233 - Could not understand audio
+2025-07-18 01:10:01.893 | INFO     | __main__:run_detection_loop:135 - Audio description: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:10:02.420 | INFO     | __main__:run_detection_loop:159 - Quit key pressed
+2025-07-18 01:10:02.742 | DEBUG    | core.audio_processor:_listen_for_commands:222 - Listening for voice command...
+2025-07-18 01:10:03.079 | INFO     | __main__:stop_camera:63 - Camera stopped
+2025-07-18 01:10:04.991 | DEBUG    | core.audio_processor:_listen_for_commands:241 - No speech detected
+2025-07-18 01:10:04.991 | INFO     | core.audio_processor:_listen_for_commands:247 - Voice command listener stopped
+2025-07-18 01:10:06.100 | INFO     | core.audio_processor:stop:212 - Audio processor stopped
+2025-07-18 01:10:06.100 | INFO     | __main__:stop:216 - VisionGuide AI stopped
+2025-07-18 01:10:06.100 | INFO     | __main__:main:274 - VisionGuide AI shutdown complete
+2025-07-18 01:49:28.400 | INFO     | core.object_detector:__init__:33 - Object detector initialized on cpu
+2025-07-18 01:49:36.866 | INFO     | core.depth_estimator:_load_model:63 - Depth estimation model loaded: MiDaS_small
+2025-07-18 01:49:37.411 | INFO     | core.audio_processor:_initialize_tts:85 - TTS engine initialized successfully
+2025-07-18 01:49:38.675 | INFO     | core.audio_processor:_initialize_speech_recognition:96 - Adjusting for ambient noise...
+2025-07-18 01:49:39.893 | INFO     | core.audio_processor:_initialize_speech_recognition:99 - Speech recognition initialized
+2025-07-18 01:49:39.900 | INFO     | core.audio_processor:__init__:66 - Audio processor initialized
+2025-07-18 01:49:39.900 | WARNING  | core.object_detector:__init__:175 - Face recognition module not available - skipping face recognition features
+2025-07-18 01:49:39.900 | INFO     | __main__:__init__:39 - Testing audio system...
+2025-07-18 01:49:39.900 | INFO     | core.audio_processor:speak_immediately:146 - Speaking immediately: VisionGuide AI audio test. If you can hear this, audio is working correctly.
+2025-07-18 01:49:47.003 | DEBUG    | core.audio_processor:speak_immediately:152 - Immediate speech completed
+2025-07-18 01:49:47.003 | INFO     | __main__:__init__:42 - VisionGuide AI initialized successfully
+2025-07-18 01:49:47.745 | INFO     | __main__:start_camera:56 - Camera started successfully
+2025-07-18 01:49:47.747 | INFO     | core.audio_processor:_audio_worker:171 - Audio worker started
+2025-07-18 01:49:47.749 | INFO     | core.audio_processor:_listen_for_commands:265 - Voice command listener started
+2025-07-18 01:49:47.749 | INFO     | core.audio_processor:start:245 - Audio processor started
+2025-07-18 01:49:47.749 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: VisionGuide AI is starting. I will describe what I...
+2025-07-18 01:49:47.749 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: VisionGuide AI is starting. I will describe what I see every few seconds.
+2025-07-18 01:49:47.751 | INFO     | __main__:start:206 - VisionGuide AI started
+2025-07-18 01:49:47.751 | INFO     | __main__:main:270 - VisionGuide AI is running. Press 'q' to quit.
+2025-07-18 01:49:49.076 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:49:49.169 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:49:51.489 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:49:52.381 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:49:53.288 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:49:53.288 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:49:53.288 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:49:53.769 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:49:57.853 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:49:58.267 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:49:58.267 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:49:58.267 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:49:58.894 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:49:59.339 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:50:03.357 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:50:03.357 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:50:03.357 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:50:03.832 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:50:04.859 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:50:05.843 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:50:07.929 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:50:08.454 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see cell phone and person. cell phone is clo...
+2025-07-18 01:50:08.454 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see cell phone and person. cell phone is closest at 0.7 steps person is furthest at 0.7 steps.
+2025-07-18 01:50:08.454 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see cell phone and person. cell phone is closest at 0.7 steps person is furthest at 0.7 steps.
+2025-07-18 01:50:08.834 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:50:09.274 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:50:11.573 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:50:12.458 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:50:13.497 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:50:13.497 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:50:13.497 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:50:13.969 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:50:15.203 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:50:16.101 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:50:18.192 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:50:18.741 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:50:18.741 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:50:18.741 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:50:19.139 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:50:19.625 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:50:21.948 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:50:22.884 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:50:23.938 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:50:23.940 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:50:23.940 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:50:24.415 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:50:25.720 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:50:26.678 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:50:29.164 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:50:29.164 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 01:50:29.164 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 01:50:29.670 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:50:31.824 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:50:32.912 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:50:34.371 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:50:34.374 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:50:34.374 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:50:34.875 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:50:36.446 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:50:37.422 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:50:39.443 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:50:39.443 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:50:39.446 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:50:39.508 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:50:39.993 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:50:41.253 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:50:43.342 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:50:44.231 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:50:47.671 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:50:48.553 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:50:49.701 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: You are in a outdoor environment. I can see a cat....
+2025-07-18 01:50:49.701 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: You are in a outdoor environment. I can see a cat. cat is closest at 0.7 steps On your right: cat.
+2025-07-18 01:50:49.701 | INFO     | __main__:run_detection_loop:140 - Queued audio: You are in a outdoor environment. I can see a cat. cat is closest at 0.7 steps On your right: cat.
+2025-07-18 01:50:50.149 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:50:51.251 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:50:52.207 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:50:54.600 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:50:55.678 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:50:59.880 | INFO     | core.audio_processor:_listen_for_commands:282 - Voice command detected: 'describe scene'
+2025-07-18 01:50:59.880 | INFO     | core.audio_processor:_process_voice_command:305 - Processing voice command: describe scene
+2025-07-18 01:50:59.880 | INFO     | core.audio_processor:speak_immediately:146 - Speaking immediately: Analyzing current scene
+2025-07-18 01:51:00.384 | DEBUG    | core.audio_processor:speak_immediately:152 - Immediate speech completed
+2025-07-18 01:51:01.649 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:51:03.729 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:51:04.659 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:51:05.247 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:51:05.247 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:51:05.247 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:51:05.748 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:51:07.510 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:51:08.443 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:51:10.385 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:51:10.385 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 01:51:10.385 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 01:51:10.859 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:51:11.940 | INFO     | core.audio_processor:_listen_for_commands:282 - Voice command detected: 'describe scene'
+2025-07-18 01:51:11.940 | INFO     | core.audio_processor:_process_voice_command:305 - Processing voice command: describe scene
+2025-07-18 01:51:11.942 | INFO     | core.audio_processor:speak_immediately:146 - Speaking immediately: Analyzing current scene
+2025-07-18 01:51:12.451 | DEBUG    | core.audio_processor:speak_immediately:152 - Immediate speech completed
+2025-07-18 01:51:13.715 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:51:15.568 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:51:15.568 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:51:15.568 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:51:16.038 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:51:16.470 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:51:17.377 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:51:18.965 | INFO     | __main__:signal_handler:248 - Received interrupt signal
+2025-07-18 01:51:18.978 | INFO     | core.audio_processor:speak_immediately:146 - Speaking immediately: VisionGuide AI is shutting down. Goodbye.
+2025-07-18 01:51:19.461 | DEBUG    | core.audio_processor:speak_immediately:152 - Immediate speech completed
+2025-07-18 01:51:20.029 | INFO     | __main__:stop_camera:68 - Camera stopped
+2025-07-18 01:51:20.108 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:51:20.108 | INFO     | core.audio_processor:_listen_for_commands:301 - Voice command listener stopped
+2025-07-18 01:51:20.158 | INFO     | core.audio_processor:_audio_worker:225 - Audio worker stopped
+2025-07-18 01:51:20.159 | INFO     | core.audio_processor:stop:261 - Audio processor stopped
+2025-07-18 01:51:20.159 | INFO     | __main__:stop:230 - VisionGuide AI stopped
+2025-07-18 01:51:20.159 | INFO     | core.audio_processor:speak_immediately:146 - Speaking immediately: VisionGuide AI is shutting down. Goodbye.
+2025-07-18 01:51:20.669 | DEBUG    | core.audio_processor:speak_immediately:152 - Immediate speech completed
+2025-07-18 01:51:20.669 | INFO     | core.audio_processor:stop:261 - Audio processor stopped
+2025-07-18 01:51:20.671 | INFO     | __main__:stop:230 - VisionGuide AI stopped
+2025-07-18 01:51:20.671 | INFO     | __main__:main:288 - VisionGuide AI shutdown complete
+2025-07-18 01:52:34.784 | INFO     | core.object_detector:__init__:33 - Object detector initialized on cpu
+2025-07-18 01:52:43.345 | INFO     | core.depth_estimator:_load_model:63 - Depth estimation model loaded: MiDaS_small
+2025-07-18 01:52:44.223 | INFO     | core.audio_processor:_initialize_tts:85 - TTS engine initialized successfully
+2025-07-18 01:52:45.238 | INFO     | core.audio_processor:_initialize_speech_recognition:96 - Adjusting for ambient noise...
+2025-07-18 01:52:46.348 | INFO     | core.audio_processor:_initialize_speech_recognition:99 - Speech recognition initialized
+2025-07-18 01:52:46.348 | INFO     | core.audio_processor:__init__:66 - Audio processor initialized
+2025-07-18 01:52:46.352 | WARNING  | core.object_detector:__init__:175 - Face recognition module not available - skipping face recognition features
+2025-07-18 01:52:46.352 | INFO     | __main__:__init__:39 - Testing audio system...
+2025-07-18 01:52:46.353 | INFO     | core.audio_processor:speak_immediately:146 - Speaking immediately: VisionGuide AI audio test. If you can hear this, audio is working correctly.
+2025-07-18 01:52:53.398 | DEBUG    | core.audio_processor:speak_immediately:152 - Immediate speech completed
+2025-07-18 01:52:53.398 | INFO     | __main__:__init__:42 - VisionGuide AI initialized successfully
+2025-07-18 01:52:54.063 | INFO     | __main__:start_camera:56 - Camera started successfully
+2025-07-18 01:52:54.063 | INFO     | core.audio_processor:_audio_worker:171 - Audio worker started
+2025-07-18 01:52:54.070 | INFO     | core.audio_processor:_listen_for_commands:265 - Voice command listener started
+2025-07-18 01:52:54.070 | INFO     | core.audio_processor:start:245 - Audio processor started
+2025-07-18 01:52:54.072 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: VisionGuide AI is starting. I will describe what I...
+2025-07-18 01:52:54.072 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: VisionGuide AI is starting. I will describe what I see every few seconds.
+2025-07-18 01:52:54.082 | INFO     | __main__:start:206 - VisionGuide AI started
+2025-07-18 01:52:54.089 | INFO     | __main__:main:270 - VisionGuide AI is running. Press 'q' to quit.
+2025-07-18 01:52:55.450 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:52:55.544 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:52:59.630 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:52:59.630 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:52:59.630 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:53:00.120 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:53:01.293 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:53:02.392 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:53:04.479 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:53:04.764 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see cell phone and person. cell phone is clo...
+2025-07-18 01:53:04.764 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see cell phone and person. cell phone is closest at 0.7 steps person is furthest at 0.7 steps.
+2025-07-18 01:53:04.764 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see cell phone and person. cell phone is closest at 0.7 steps person is furthest at 0.7 steps.
+2025-07-18 01:53:05.422 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:53:05.891 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:53:08.205 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:53:09.141 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:53:09.736 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see person and cell phone. person is closest...
+2025-07-18 01:53:09.736 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see person and cell phone. person is closest at 0.7 steps cell phone is furthest at 0.7 steps.
+2025-07-18 01:53:09.746 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see person and cell phone. person is closest at 0.7 steps cell phone is furthest at 0.7 steps.
+2025-07-18 01:53:10.212 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:53:13.451 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:53:14.495 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:53:14.792 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:53:14.792 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:53:14.792 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:53:15.236 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:53:17.212 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:53:18.149 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:53:19.928 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:53:19.928 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:53:19.928 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:53:20.392 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:53:20.871 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:53:21.906 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:53:25.194 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:53:25.194 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:53:25.194 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:53:25.668 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:53:27.308 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:53:28.203 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:53:30.131 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:53:30.121 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:53:30.132 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:53:30.602 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:53:30.973 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:53:31.885 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:53:35.355 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see person and sports ball. person is closes...
+2025-07-18 01:53:35.355 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see person and sports ball. person is closest at 0.7 steps sports ball is furthest at 0.7 steps.
+2025-07-18 01:53:35.355 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see person and sports ball. person is closest at 0.7 steps sports ball is furthest at 0.7 steps.
+2025-07-18 01:53:35.862 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:53:37.077 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:53:38.203 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:53:40.639 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:53:40.639 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 01:53:40.639 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 01:53:41.146 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:53:41.189 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:53:42.414 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:53:44.515 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:53:45.487 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:53:45.796 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:53:45.796 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:53:45.796 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:53:46.277 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:53:48.469 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:53:49.386 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:53:50.743 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see person and cell phone. person is closest...
+2025-07-18 01:53:50.743 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see person and cell phone. person is closest at 0.7 steps cell phone is furthest at 0.7 steps.
+2025-07-18 01:53:50.743 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see person and cell phone. person is closest at 0.7 steps cell phone is furthest at 0.7 steps.
+2025-07-18 01:53:51.213 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:53:52.375 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:53:53.368 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:53:55.450 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:53:55.924 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see person and cell phone. person is closest...
+2025-07-18 01:53:55.924 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see person and cell phone. person is closest at 0.7 steps cell phone is furthest at 0.7 steps.
+2025-07-18 01:53:55.924 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see person and cell phone. person is closest at 0.7 steps cell phone is furthest at 0.7 steps.
+2025-07-18 01:53:56.328 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:53:56.783 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:53:59.199 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:54:00.202 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:54:00.983 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:54:00.983 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:54:00.992 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:54:01.456 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:54:03.535 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:54:04.564 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:54:06.108 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see cell phone and person. cell phone is clo...
+2025-07-18 01:54:06.108 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see cell phone and person. cell phone is closest at 0.7 steps person is furthest at 0.7 steps.
+2025-07-18 01:54:06.108 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see cell phone and person. cell phone is closest at 0.7 steps person is furthest at 0.7 steps.
+2025-07-18 01:54:06.575 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:54:07.309 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:54:08.179 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:54:11.114 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:54:11.186 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:54:11.186 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:54:11.186 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:54:12.022 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:54:12.494 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:54:14.826 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:54:15.830 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:54:16.432 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:54:16.432 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 01:54:16.432 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 01:54:16.913 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:54:18.808 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:54:19.847 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:54:21.575 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:54:21.575 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:54:21.575 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:54:22.075 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:54:23.382 | INFO     | core.audio_processor:_listen_for_commands:282 - Voice command detected: 'what do you see'
+2025-07-18 01:54:23.384 | INFO     | core.audio_processor:_process_voice_command:305 - Processing voice command: what do you see
+2025-07-18 01:54:23.385 | INFO     | core.audio_processor:speak_immediately:146 - Speaking immediately: Analyzing current scene
+2025-07-18 01:54:24.014 | DEBUG    | core.audio_processor:speak_immediately:152 - Immediate speech completed
+2025-07-18 01:54:25.422 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:54:26.604 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:54:26.607 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 01:54:26.607 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 01:54:27.080 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:54:28.685 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:54:29.660 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:54:31.632 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:54:31.632 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 01:54:31.632 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 01:54:32.096 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:54:32.198 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:54:33.410 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:54:36.089 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:54:36.879 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:54:36.879 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 01:54:36.879 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 01:54:37.032 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:54:37.486 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:54:39.799 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:54:40.764 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:54:41.959 | DEBUG    | core.audio_processor:speak_async:127 - Added to speech queue: I can see a person. person is closest at 0.7 steps...
+2025-07-18 01:54:41.959 | INFO     | core.audio_processor:_audio_worker:195 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:54:41.959 | INFO     | __main__:run_detection_loop:140 - Queued audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 01:54:42.435 | DEBUG    | core.audio_processor:_audio_worker:201 - Speech completed
+2025-07-18 01:54:43.532 | DEBUG    | core.audio_processor:_listen_for_commands:295 - No speech detected
+2025-07-18 01:54:43.645 | INFO     | __main__:run_detection_loop:166 - Quit key pressed
+2025-07-18 01:54:43.690 | INFO     | core.audio_processor:speak_immediately:146 - Speaking immediately: VisionGuide AI is shutting down. Goodbye.
+2025-07-18 01:54:44.464 | DEBUG    | core.audio_processor:_listen_for_commands:276 - Listening for voice command...
+2025-07-18 01:54:44.942 | DEBUG    | core.audio_processor:speak_immediately:152 - Immediate speech completed
+2025-07-18 01:54:45.448 | INFO     | __main__:stop_camera:68 - Camera stopped
+2025-07-18 01:54:45.575 | INFO     | core.audio_processor:_audio_worker:225 - Audio worker stopped
+2025-07-18 01:54:47.938 | DEBUG    | core.audio_processor:_listen_for_commands:287 - Could not understand audio
+2025-07-18 01:54:47.941 | INFO     | core.audio_processor:_listen_for_commands:301 - Voice command listener stopped
+2025-07-18 01:54:47.941 | INFO     | core.audio_processor:stop:261 - Audio processor stopped
+2025-07-18 01:54:47.941 | INFO     | __main__:stop:230 - VisionGuide AI stopped
+2025-07-18 01:54:47.943 | INFO     | __main__:main:288 - VisionGuide AI shutdown complete
+2025-07-18 02:12:02.325 | INFO     | core.object_detector:__init__:33 - Object detector initialized on cpu
+2025-07-18 02:12:10.433 | INFO     | core.depth_estimator:_load_model:63 - Depth estimation model loaded: MiDaS_small
+2025-07-18 02:12:11.242 | INFO     | core.audio_processor:_initialize_tts:85 - TTS engine initialized successfully
+2025-07-18 02:12:12.875 | INFO     | core.audio_processor:_initialize_speech_recognition:95 - Adjusting for ambient noise...
+2025-07-18 02:12:14.103 | INFO     | core.audio_processor:_initialize_speech_recognition:98 - Speech recognition initialized
+2025-07-18 02:12:14.103 | INFO     | core.audio_processor:__init__:64 - Audio processor initialized
+2025-07-18 02:12:14.106 | WARNING  | core.object_detector:__init__:175 - Face recognition module not available - skipping face recognition features
+2025-07-18 02:12:14.106 | INFO     | __main__:__init__:38 - VisionGuide AI initialized successfully
+2025-07-18 02:12:14.729 | INFO     | __main__:start_camera:52 - Camera started successfully
+2025-07-18 02:12:14.729 | INFO     | core.audio_processor:_audio_worker:193 - Audio worker started
+2025-07-18 02:12:14.729 | INFO     | core.audio_processor:_listen_for_commands:285 - Voice command listener started
+2025-07-18 02:12:14.729 | INFO     | core.audio_processor:start:265 - Audio processor started
+2025-07-18 02:12:15.745 | INFO     | __main__:start:208 - Testing audio system...
+2025-07-18 02:12:15.745 | INFO     | core.audio_processor:test_audio:371 - Testing audio output...
+2025-07-18 02:12:15.745 | INFO     | core.audio_processor:speak_immediately:135 - Speaking immediately: VisionGuide AI audio test. If you can hear this, audio is working correctly.
+2025-07-18 02:12:15.758 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:12:20.153 | DEBUG    | core.audio_processor:_listen_for_commands:305 - Could not understand audio
+2025-07-18 02:12:23.439 | INFO     | core.audio_processor:speak_immediately:146 - Immediate speech completed
+2025-07-18 02:12:24.654 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:12:25.441 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: VisionGuide AI is ready. I will describe what I see every few seconds.
+2025-07-18 02:12:25.441 | INFO     | core.audio_processor:_audio_worker:215 - Speaking: VisionGuide AI is ready. I will describe what I see every few seconds.
+2025-07-18 02:12:25.441 | INFO     | __main__:start:220 - VisionGuide AI started
+2025-07-18 02:12:25.445 | INFO     | __main__:main:284 - VisionGuide AI is running. Press 'q' to quit, 's' for manual description, 't' to test audio.
+2025-07-18 02:12:26.624 | INFO     | core.audio_processor:_audio_worker:221 - Speech completed successfully
+2025-07-18 02:12:28.212 | DEBUG    | core.audio_processor:_listen_for_commands:312 - No speech detected
+2025-07-18 02:12:29.137 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:12:30.056 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:12:30.060 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:12:30.060 | INFO     | core.audio_processor:_audio_worker:215 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:12:33.924 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:12:33.924 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:12:34.058 | DEBUG    | core.audio_processor:_listen_for_commands:305 - Could not understand audio
+2025-07-18 02:12:37.949 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:12:37.952 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:12:42.043 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see person and cell phone. person is closest at 0.7 steps cell phone is furthest at 0.7 steps.
+2025-07-18 02:12:42.043 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see person and cell phone. person is closest at 0.7 steps cell phone is furthest at 0.7 steps.
+2025-07-18 02:12:46.274 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:12:46.277 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:12:50.438 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:12:50.438 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:12:54.596 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see person and cell phone. person is closest at 0.7 steps cell phone is furthest at 0.7 steps.
+2025-07-18 02:12:54.596 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see person and cell phone. person is closest at 0.7 steps cell phone is furthest at 0.7 steps.
+2025-07-18 02:12:58.711 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:12:58.711 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:13:02.880 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see person and cell phone. person is closest at 0.7 steps cell phone is furthest at 0.7 steps.
+2025-07-18 02:13:02.880 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see person and cell phone. person is closest at 0.7 steps cell phone is furthest at 0.7 steps.
+2025-07-18 02:13:06.928 | INFO     | __main__:run_detection_loop:178 - Manual scene description triggered
+2025-07-18 02:13:06.928 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:13:07.380 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:13:07.380 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:13:11.548 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:13:11.548 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:13:15.591 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:13:15.591 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:13:20.094 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:13:20.096 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:13:23.921 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 02:13:23.924 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 02:13:28.056 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:13:28.056 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:13:32.240 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see frisbee and person. frisbee is closest at 0.7 steps person is furthest at 0.7 steps.
+2025-07-18 02:13:32.240 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see frisbee and person. frisbee is closest at 0.7 steps person is furthest at 0.7 steps.
+2025-07-18 02:13:36.187 | INFO     | __main__:run_detection_loop:134 - Processing audio: You are in a indoor environment. I can see person and toilet. person is closest at 0.7 steps toilet is furthest at 0.7 steps.
+2025-07-18 02:13:36.187 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: You are in a indoor environment. I can see person and toilet. person is closest at 0.7 steps toilet is furthest at 0.7 steps.
+2025-07-18 02:13:40.414 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see person and bowl. person is closest at 0.7 steps bowl is furthest at 0.7 steps.
+2025-07-18 02:13:40.414 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see person and bowl. person is closest at 0.7 steps bowl is furthest at 0.7 steps.
+2025-07-18 02:13:44.646 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:13:44.646 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:14:33.792 | INFO     | __main__:run_detection_loop:134 - Processing audio: You are in a indoor environment. I can see a clock. clock is closest at 0.7 steps On your right: clock.
+2025-07-18 02:14:33.792 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: You are in a indoor environment. I can see a clock. clock is closest at 0.7 steps On your right: clock.
+2025-07-18 02:14:45.949 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:14:45.949 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:14:49.972 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:14:49.972 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:14:53.470 | INFO     | __main__:run_detection_loop:171 - Quit key pressed
+2025-07-18 02:14:53.525 | INFO     | core.audio_processor:speak_immediately:135 - Speaking immediately: VisionGuide AI is shutting down. Goodbye.
+2025-07-18 02:14:53.526 | ERROR    | core.audio_processor:speak_immediately:149 - Failed to speak text immediately: run loop already started
+2025-07-18 02:14:54.201 | INFO     | __main__:stop_camera:64 - Camera stopped
+2025-07-18 02:14:55.098 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:14:57.189 | DEBUG    | core.audio_processor:_listen_for_commands:312 - No speech detected
+2025-07-18 02:14:57.189 | INFO     | core.audio_processor:_listen_for_commands:318 - Voice command listener stopped
+2025-07-18 02:14:59.217 | INFO     | core.audio_processor:stop:281 - Audio processor stopped
+2025-07-18 02:14:59.219 | INFO     | __main__:stop:244 - VisionGuide AI stopped
+2025-07-18 02:14:59.219 | INFO     | __main__:main:302 - VisionGuide AI shutdown complete
+2025-07-18 02:19:49.532 | INFO     | core.object_detector:__init__:33 - Object detector initialized on cpu
+2025-07-18 02:19:57.545 | INFO     | core.depth_estimator:_load_model:63 - Depth estimation model loaded: MiDaS_small
+2025-07-18 02:19:58.430 | INFO     | core.audio_processor:_initialize_tts:85 - TTS engine initialized successfully
+2025-07-18 02:19:59.869 | INFO     | core.audio_processor:_initialize_speech_recognition:95 - Adjusting for ambient noise...
+2025-07-18 02:20:01.092 | INFO     | core.audio_processor:_initialize_speech_recognition:98 - Speech recognition initialized
+2025-07-18 02:20:01.092 | INFO     | core.audio_processor:__init__:64 - Audio processor initialized
+2025-07-18 02:20:01.092 | WARNING  | core.object_detector:__init__:175 - Face recognition module not available - skipping face recognition features
+2025-07-18 02:20:01.092 | INFO     | __main__:__init__:38 - VisionGuide AI initialized successfully
+2025-07-18 02:20:01.747 | INFO     | __main__:start_camera:52 - Camera started successfully
+2025-07-18 02:20:01.747 | INFO     | core.audio_processor:_audio_worker:193 - Audio worker started
+2025-07-18 02:20:01.747 | INFO     | core.audio_processor:_listen_for_commands:285 - Voice command listener started
+2025-07-18 02:20:01.747 | INFO     | core.audio_processor:start:265 - Audio processor started
+2025-07-18 02:20:02.613 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:20:02.754 | INFO     | __main__:start:208 - Testing audio system...
+2025-07-18 02:20:02.754 | INFO     | core.audio_processor:test_audio:371 - Testing audio output...
+2025-07-18 02:20:02.754 | INFO     | core.audio_processor:speak_immediately:135 - Speaking immediately: VisionGuide AI audio test. If you can hear this, audio is working correctly.
+2025-07-18 02:20:06.805 | DEBUG    | core.audio_processor:_listen_for_commands:305 - Could not understand audio
+2025-07-18 02:20:10.490 | INFO     | core.audio_processor:speak_immediately:146 - Immediate speech completed
+2025-07-18 02:20:11.627 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:20:12.492 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: VisionGuide AI is ready. I will describe what I see every few seconds.
+2025-07-18 02:20:12.492 | INFO     | core.audio_processor:_audio_worker:215 - Speaking: VisionGuide AI is ready. I will describe what I see every few seconds.
+2025-07-18 02:20:12.497 | INFO     | __main__:start:220 - VisionGuide AI started
+2025-07-18 02:20:12.499 | INFO     | __main__:main:284 - VisionGuide AI is running. Press 'q' to quit, 's' for manual description, 't' to test audio.
+2025-07-18 02:20:13.668 | INFO     | core.audio_processor:_audio_worker:221 - Speech completed successfully
+2025-07-18 02:20:15.116 | DEBUG    | core.audio_processor:_listen_for_commands:312 - No speech detected
+2025-07-18 02:20:16.062 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:20:17.162 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:20:17.170 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:20:17.170 | INFO     | core.audio_processor:_audio_worker:215 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:20:20.670 | DEBUG    | core.audio_processor:_listen_for_commands:305 - Could not understand audio
+2025-07-18 02:20:21.138 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:20:21.138 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:20:25.313 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:20:25.313 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:20:29.384 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:20:29.386 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:20:33.514 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see person and frisbee. person is closest at 0.7 steps frisbee is furthest at 0.7 steps.
+2025-07-18 02:20:33.514 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see person and frisbee. person is closest at 0.7 steps frisbee is furthest at 0.7 steps.
+2025-07-18 02:20:37.472 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see person, frisbee and cake. person is closest at 0.7 steps cake is furthest at 0.7 steps.
+2025-07-18 02:20:37.472 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see person, frisbee and cake. person is closest at 0.7 steps cake is furthest at 0.7 steps.
+2025-07-18 02:20:41.751 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see bowl and person. bowl is closest at 0.7 steps person is furthest at 0.7 steps.
+2025-07-18 02:20:41.751 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see bowl and person. bowl is closest at 0.7 steps person is furthest at 0.7 steps.
+2025-07-18 02:20:50.055 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:20:50.055 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:20:54.152 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:20:54.152 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:20:58.048 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see person and cell phone. person is closest at 0.7 steps cell phone is furthest at 0.7 steps.
+2025-07-18 02:20:58.048 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see person and cell phone. person is closest at 0.7 steps cell phone is furthest at 0.7 steps.
+2025-07-18 02:21:02.210 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:21:02.210 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:21:06.544 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:21:06.544 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:21:07.143 | INFO     | __main__:run_detection_loop:171 - Quit key pressed
+2025-07-18 02:21:07.153 | INFO     | core.audio_processor:speak_immediately:135 - Speaking immediately: VisionGuide AI is shutting down. Goodbye.
+2025-07-18 02:21:07.154 | ERROR    | core.audio_processor:speak_immediately:149 - Failed to speak text immediately: run loop already started
+2025-07-18 02:21:07.814 | INFO     | __main__:stop_camera:64 - Camera stopped
+2025-07-18 02:21:08.746 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:21:10.851 | DEBUG    | core.audio_processor:_listen_for_commands:312 - No speech detected
+2025-07-18 02:21:10.851 | INFO     | core.audio_processor:_listen_for_commands:318 - Voice command listener stopped
+2025-07-18 02:21:12.830 | INFO     | core.audio_processor:stop:281 - Audio processor stopped
+2025-07-18 02:21:12.832 | INFO     | __main__:stop:244 - VisionGuide AI stopped
+2025-07-18 02:21:12.832 | INFO     | __main__:main:302 - VisionGuide AI shutdown complete
+2025-07-18 02:24:35.006 | INFO     | core.object_detector:__init__:33 - Object detector initialized on cpu
+2025-07-18 02:24:43.749 | INFO     | core.depth_estimator:_load_model:63 - Depth estimation model loaded: MiDaS_small
+2025-07-18 02:24:44.266 | INFO     | core.audio_processor:_initialize_tts:85 - TTS engine initialized successfully
+2025-07-18 02:24:44.369 | INFO     | core.audio_processor:_initialize_speech_recognition:95 - Adjusting for ambient noise...
+2025-07-18 02:24:45.380 | INFO     | core.audio_processor:_initialize_speech_recognition:98 - Speech recognition initialized
+2025-07-18 02:24:45.382 | INFO     | core.audio_processor:__init__:64 - Audio processor initialized
+2025-07-18 02:24:45.388 | WARNING  | core.object_detector:__init__:175 - Face recognition module not available - skipping face recognition features
+2025-07-18 02:24:45.390 | INFO     | __main__:__init__:38 - VisionGuide AI initialized successfully
+2025-07-18 02:24:46.080 | INFO     | __main__:start_camera:52 - Camera started successfully
+2025-07-18 02:24:46.082 | INFO     | core.audio_processor:_audio_worker:193 - Audio worker started
+2025-07-18 02:24:46.082 | INFO     | core.audio_processor:_listen_for_commands:285 - Voice command listener started
+2025-07-18 02:24:46.083 | INFO     | core.audio_processor:start:265 - Audio processor started
+2025-07-18 02:24:46.182 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:24:47.086 | INFO     | __main__:start:208 - Testing audio system...
+2025-07-18 02:24:47.087 | INFO     | core.audio_processor:test_audio:371 - Testing audio output...
+2025-07-18 02:24:47.088 | INFO     | core.audio_processor:speak_immediately:135 - Speaking immediately: VisionGuide AI audio test. If you can hear this, audio is working correctly.
+2025-07-18 02:24:49.884 | DEBUG    | core.audio_processor:_listen_for_commands:305 - Could not understand audio
+2025-07-18 02:24:54.349 | INFO     | core.audio_processor:speak_immediately:146 - Immediate speech completed
+2025-07-18 02:24:54.521 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:24:56.352 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: VisionGuide AI is ready. I will describe what I see every few seconds.
+2025-07-18 02:24:56.352 | INFO     | core.audio_processor:_audio_worker:215 - Speaking: VisionGuide AI is ready. I will describe what I see every few seconds.
+2025-07-18 02:24:56.354 | INFO     | __main__:start:220 - VisionGuide AI started
+2025-07-18 02:24:56.357 | INFO     | __main__:main:284 - VisionGuide AI is running. Press 'q' to quit, 's' for manual description, 't' to test audio.
+2025-07-18 02:24:57.640 | INFO     | core.audio_processor:_audio_worker:221 - Speech completed successfully
+2025-07-18 02:24:59.636 | DEBUG    | core.audio_processor:_listen_for_commands:305 - Could not understand audio
+2025-07-18 02:24:59.741 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:25:00.907 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:00.908 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:00.908 | INFO     | core.audio_processor:_audio_worker:215 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:03.381 | DEBUG    | core.audio_processor:_listen_for_commands:305 - Could not understand audio
+2025-07-18 02:25:04.954 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:04.955 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:09.073 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:09.074 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:13.031 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:13.032 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:17.217 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:17.218 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:21.364 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:21.365 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:25.576 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 02:25:25.577 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 02:25:29.585 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:29.586 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:33.802 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:33.803 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:41.931 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:41.932 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:46.028 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:46.030 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:50.168 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:25:50.169 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:26:02.615 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:26:02.616 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:26:06.639 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:26:06.640 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:26:10.879 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:26:10.880 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:26:19.146 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:26:19.147 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:26:23.280 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:26:23.281 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:26:27.382 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:26:27.382 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:26:31.475 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:26:31.476 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:26:32.497 | INFO     | __main__:run_detection_loop:171 - Quit key pressed
+2025-07-18 02:26:32.544 | INFO     | core.audio_processor:speak_immediately:135 - Speaking immediately: VisionGuide AI is shutting down. Goodbye.
+2025-07-18 02:26:32.546 | ERROR    | core.audio_processor:speak_immediately:149 - Failed to speak text immediately: run loop already started
+2025-07-18 02:26:32.744 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:26:33.083 | INFO     | __main__:stop_camera:64 - Camera stopped
+2025-07-18 02:26:34.762 | DEBUG    | core.audio_processor:_listen_for_commands:312 - No speech detected
+2025-07-18 02:26:34.764 | INFO     | core.audio_processor:_listen_for_commands:318 - Voice command listener stopped
+2025-07-18 02:26:38.097 | INFO     | core.audio_processor:stop:281 - Audio processor stopped
+2025-07-18 02:26:38.099 | INFO     | __main__:stop:244 - VisionGuide AI stopped
+2025-07-18 02:26:38.099 | INFO     | __main__:main:302 - VisionGuide AI shutdown complete
+2025-07-18 02:31:39.251 | INFO     | core.object_detector:__init__:33 - Object detector initialized on cpu
+2025-07-18 02:31:47.428 | INFO     | core.depth_estimator:_load_model:63 - Depth estimation model loaded: MiDaS_small
+2025-07-18 02:31:47.964 | INFO     | core.audio_processor:_initialize_tts:85 - TTS engine initialized successfully
+2025-07-18 02:31:48.064 | INFO     | core.audio_processor:_initialize_speech_recognition:95 - Adjusting for ambient noise...
+2025-07-18 02:31:49.080 | INFO     | core.audio_processor:_initialize_speech_recognition:98 - Speech recognition initialized
+2025-07-18 02:31:49.081 | INFO     | core.audio_processor:__init__:64 - Audio processor initialized
+2025-07-18 02:31:49.088 | WARNING  | core.object_detector:__init__:175 - Face recognition module not available - skipping face recognition features
+2025-07-18 02:31:49.089 | INFO     | __main__:__init__:38 - VisionGuide AI initialized successfully
+2025-07-18 02:31:49.729 | INFO     | __main__:start_camera:52 - Camera started successfully
+2025-07-18 02:31:49.731 | INFO     | core.audio_processor:_audio_worker:193 - Audio worker started
+2025-07-18 02:31:49.732 | INFO     | core.audio_processor:_listen_for_commands:285 - Voice command listener started
+2025-07-18 02:31:49.732 | INFO     | core.audio_processor:start:265 - Audio processor started
+2025-07-18 02:31:49.836 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:31:50.734 | INFO     | __main__:start:208 - Testing audio system...
+2025-07-18 02:31:50.735 | INFO     | core.audio_processor:test_audio:371 - Testing audio output...
+2025-07-18 02:31:50.736 | INFO     | core.audio_processor:speak_immediately:135 - Speaking immediately: VisionGuide AI audio test. If you can hear this, audio is working correctly.
+2025-07-18 02:31:55.489 | DEBUG    | core.audio_processor:_listen_for_commands:305 - Could not understand audio
+2025-07-18 02:31:57.951 | INFO     | core.audio_processor:speak_immediately:146 - Immediate speech completed
+2025-07-18 02:31:58.116 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:31:59.954 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: VisionGuide AI is ready. I will describe what I see every few seconds.
+2025-07-18 02:31:59.954 | INFO     | core.audio_processor:_audio_worker:215 - Speaking: VisionGuide AI is ready. I will describe what I see every few seconds.
+2025-07-18 02:31:59.958 | INFO     | __main__:start:220 - VisionGuide AI started
+2025-07-18 02:31:59.959 | INFO     | __main__:main:284 - VisionGuide AI is running. Press 'q' to quit, 's' for manual description, 't' to test audio.
+2025-07-18 02:32:01.045 | DEBUG    | core.audio_processor:_listen_for_commands:312 - No speech detected
+2025-07-18 02:32:01.086 | INFO     | core.audio_processor:_audio_worker:221 - Speech completed successfully
+2025-07-18 02:32:01.574 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:32:04.655 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:32:04.657 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:32:04.657 | INFO     | core.audio_processor:_audio_worker:215 - Speaking: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:32:05.727 | DEBUG    | core.audio_processor:_listen_for_commands:305 - Could not understand audio
+2025-07-18 02:32:08.580 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:32:08.581 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:32:12.645 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:32:12.647 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:32:16.731 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:32:16.732 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:32:20.956 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:32:20.957 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:32:25.185 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:32:25.186 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:32:29.256 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:32:29.257 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:32:29.807 | INFO     | __main__:run_detection_loop:171 - Quit key pressed
+2025-07-18 02:32:29.900 | INFO     | core.audio_processor:speak_immediately:135 - Speaking immediately: VisionGuide AI is shutting down. Goodbye.
+2025-07-18 02:32:29.902 | ERROR    | core.audio_processor:speak_immediately:149 - Failed to speak text immediately: run loop already started
+2025-07-18 02:32:30.058 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:32:30.504 | INFO     | __main__:stop_camera:64 - Camera stopped
+2025-07-18 02:32:32.294 | DEBUG    | core.audio_processor:_listen_for_commands:305 - Could not understand audio
+2025-07-18 02:32:32.295 | INFO     | core.audio_processor:_listen_for_commands:318 - Voice command listener stopped
+2025-07-18 02:32:35.517 | INFO     | core.audio_processor:stop:281 - Audio processor stopped
+2025-07-18 02:32:35.518 | INFO     | __main__:stop:244 - VisionGuide AI stopped
+2025-07-18 02:32:35.518 | INFO     | __main__:main:302 - VisionGuide AI shutdown complete
+2025-07-18 02:32:52.720 | INFO     | core.object_detector:__init__:33 - Object detector initialized on cpu
+2025-07-18 02:33:01.136 | INFO     | core.depth_estimator:_load_model:63 - Depth estimation model loaded: MiDaS_small
+2025-07-18 02:33:01.998 | INFO     | core.audio_processor:_initialize_tts:85 - TTS engine initialized successfully
+2025-07-18 02:33:03.056 | INFO     | core.audio_processor:_initialize_speech_recognition:95 - Adjusting for ambient noise...
+2025-07-18 02:33:04.171 | INFO     | core.audio_processor:_initialize_speech_recognition:98 - Speech recognition initialized
+2025-07-18 02:33:04.175 | INFO     | core.audio_processor:__init__:64 - Audio processor initialized
+2025-07-18 02:33:04.176 | WARNING  | core.object_detector:__init__:175 - Face recognition module not available - skipping face recognition features
+2025-07-18 02:33:04.176 | INFO     | __main__:__init__:38 - VisionGuide AI initialized successfully
+2025-07-18 02:33:04.860 | INFO     | __main__:start_camera:52 - Camera started successfully
+2025-07-18 02:33:04.864 | INFO     | core.audio_processor:_audio_worker:193 - Audio worker started
+2025-07-18 02:33:04.864 | INFO     | core.audio_processor:_listen_for_commands:285 - Voice command listener started
+2025-07-18 02:33:04.864 | INFO     | core.audio_processor:start:265 - Audio processor started
+2025-07-18 02:33:05.867 | INFO     | __main__:start:208 - Testing audio system...
+2025-07-18 02:33:05.867 | INFO     | core.audio_processor:test_audio:371 - Testing audio output...
+2025-07-18 02:33:05.867 | INFO     | core.audio_processor:speak_immediately:135 - Speaking immediately: VisionGuide AI audio test. If you can hear this, audio is working correctly.
+2025-07-18 02:33:05.898 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:33:11.240 | DEBUG    | core.audio_processor:_listen_for_commands:305 - Could not understand audio
+2025-07-18 02:33:13.143 | INFO     | core.audio_processor:speak_immediately:146 - Immediate speech completed
+2025-07-18 02:33:14.222 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:33:15.151 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: VisionGuide AI is ready. I will describe what I see every few seconds.
+2025-07-18 02:33:15.151 | INFO     | core.audio_processor:_audio_worker:215 - Speaking: VisionGuide AI is ready. I will describe what I see every few seconds.
+2025-07-18 02:33:15.151 | INFO     | __main__:start:220 - VisionGuide AI started
+2025-07-18 02:33:15.151 | INFO     | __main__:main:284 - VisionGuide AI is running. Press 'q' to quit, 's' for manual description, 't' to test audio.
+2025-07-18 02:33:16.307 | INFO     | core.audio_processor:_audio_worker:221 - Speech completed successfully
+2025-07-18 02:33:17.679 | DEBUG    | core.audio_processor:_listen_for_commands:312 - No speech detected
+2025-07-18 02:33:18.576 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:33:19.854 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a skis. skis is closest at 0.7 steps On your right: skis.
+2025-07-18 02:33:19.856 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a skis. skis is closest at 0.7 steps On your right: skis.
+2025-07-18 02:33:19.856 | INFO     | core.audio_processor:_audio_worker:215 - Speaking: I can see a skis. skis is closest at 0.7 steps On your right: skis.
+2025-07-18 02:33:21.064 | DEBUG    | core.audio_processor:_listen_for_commands:312 - No speech detected
+2025-07-18 02:33:23.804 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a skis. skis is closest at 0.7 steps On your right: skis.
+2025-07-18 02:33:23.806 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a skis. skis is closest at 0.7 steps On your right: skis.
+2025-07-18 02:33:27.931 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a bottle. bottle is closest at 0.7 steps Ahead: bottle.
+2025-07-18 02:33:27.931 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a bottle. bottle is closest at 0.7 steps Ahead: bottle.
+2025-07-18 02:33:36.313 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a bottle. bottle is closest at 0.7 steps Ahead: bottle.
+2025-07-18 02:33:36.313 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a bottle. bottle is closest at 0.7 steps Ahead: bottle.
+2025-07-18 02:33:40.558 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a bottle. bottle is closest at 0.7 steps Ahead: bottle.
+2025-07-18 02:33:40.558 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a bottle. bottle is closest at 0.7 steps Ahead: bottle.
+2025-07-18 02:33:56.825 | INFO     | __main__:run_detection_loop:134 - Processing audio: You are in a indoor environment. I can see person and toilet. person is closest at 0.7 steps toilet is furthest at 0.7 steps.
+2025-07-18 02:33:56.825 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: You are in a indoor environment. I can see person and toilet. person is closest at 0.7 steps toilet is furthest at 0.7 steps.
+2025-07-18 02:34:04.974 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a frisbee. frisbee is closest at 0.7 steps Ahead: frisbee.
+2025-07-18 02:34:04.974 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a frisbee. frisbee is closest at 0.7 steps Ahead: frisbee.
+2025-07-18 02:34:08.907 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see person and bowl. person is closest at 0.7 steps bowl is furthest at 0.7 steps.
+2025-07-18 02:34:08.910 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see person and bowl. person is closest at 0.7 steps bowl is furthest at 0.7 steps.
+2025-07-18 02:34:12.960 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see frisbee and person. frisbee is closest at 0.7 steps person is furthest at 0.7 steps.
+2025-07-18 02:34:12.960 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see frisbee and person. frisbee is closest at 0.7 steps person is furthest at 0.7 steps.
+2025-07-18 02:34:17.115 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see frisbee and person. frisbee is closest at 0.7 steps person is furthest at 0.7 steps.
+2025-07-18 02:34:17.115 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see frisbee and person. frisbee is closest at 0.7 steps person is furthest at 0.7 steps.
+2025-07-18 02:34:21.246 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a bowl. bowl is closest at 0.7 steps On your right: bowl.
+2025-07-18 02:34:21.246 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a bowl. bowl is closest at 0.7 steps On your right: bowl.
+2025-07-18 02:34:25.569 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a bowl. bowl is closest at 0.7 steps On your right: bowl.
+2025-07-18 02:34:25.569 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a bowl. bowl is closest at 0.7 steps On your right: bowl.
+2025-07-18 02:34:29.767 | INFO     | __main__:run_detection_loop:134 - Processing audio: You are in a indoor environment. I can see a toilet. toilet is closest at 0.7 steps On your right: toilet.
+2025-07-18 02:34:29.767 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: You are in a indoor environment. I can see a toilet. toilet is closest at 0.7 steps On your right: toilet.
+2025-07-18 02:34:33.790 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a bowl. bowl is closest at 0.7 steps On your right: bowl.
+2025-07-18 02:34:33.790 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a bowl. bowl is closest at 0.7 steps On your right: bowl.
+2025-07-18 02:34:37.965 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a bowl. bowl is closest at 0.7 steps On your right: bowl.
+2025-07-18 02:34:37.965 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a bowl. bowl is closest at 0.7 steps On your right: bowl.
+2025-07-18 02:34:46.278 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your left: person.
+2025-07-18 02:34:46.278 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your left: person.
+2025-07-18 02:34:50.478 | INFO     | __main__:run_detection_loop:134 - Processing audio: You are in a indoor environment. I can see kite and clock. kite is closest at 0.7 steps clock is furthest at 0.7 steps.
+2025-07-18 02:34:50.478 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: You are in a indoor environment. I can see kite and clock. kite is closest at 0.7 steps clock is furthest at 0.7 steps.
+2025-07-18 02:34:54.534 | INFO     | __main__:run_detection_loop:134 - Processing audio: You are in a indoor environment. I can see a clock. clock is closest at 0.7 steps On your right: clock.
+2025-07-18 02:34:54.536 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: You are in a indoor environment. I can see a clock. clock is closest at 0.7 steps On your right: clock.
+2025-07-18 02:34:58.745 | INFO     | __main__:run_detection_loop:134 - Processing audio: You are in a indoor environment. I can see a clock. clock is closest at 0.7 steps On your right: clock.
+2025-07-18 02:34:58.746 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: You are in a indoor environment. I can see a clock. clock is closest at 0.7 steps On your right: clock.
+2025-07-18 02:35:03.034 | INFO     | __main__:run_detection_loop:134 - Processing audio: You are in a indoor environment. I can see a clock. clock is closest at 0.7 steps Ahead: clock.
+2025-07-18 02:35:03.034 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: You are in a indoor environment. I can see a clock. clock is closest at 0.7 steps Ahead: clock.
+2025-07-18 02:35:07.185 | INFO     | __main__:run_detection_loop:134 - Processing audio: You are in a indoor environment. I can see a clock. clock is closest at 0.7 steps Ahead: clock.
+2025-07-18 02:35:07.185 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: You are in a indoor environment. I can see a clock. clock is closest at 0.7 steps Ahead: clock.
+2025-07-18 02:35:11.371 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:35:11.371 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:35:15.672 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 02:35:15.672 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 02:35:19.686 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:35:19.686 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:35:23.655 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 02:35:23.655 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 02:35:27.787 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 02:35:27.787 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 02:35:31.968 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 02:35:31.980 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 02:35:36.130 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:35:36.130 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:35:40.227 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:35:40.227 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:35:44.467 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 02:35:44.467 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 02:35:48.656 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:35:48.656 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:35:52.826 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 02:35:52.826 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps Ahead: person.
+2025-07-18 02:35:57.055 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:35:57.055 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:36:01.192 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:36:01.192 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:36:05.272 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:36:05.272 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:36:09.528 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:36:09.528 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:36:13.448 | INFO     | __main__:run_detection_loop:134 - Processing audio: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:36:13.448 | INFO     | core.audio_processor:speak_async:118 - Added to speech queue: I can see a person. person is closest at 0.7 steps On your right: person.
+2025-07-18 02:36:13.604 | INFO     | __main__:run_detection_loop:171 - Quit key pressed
+2025-07-18 02:36:13.696 | INFO     | core.audio_processor:speak_immediately:135 - Speaking immediately: VisionGuide AI is shutting down. Goodbye.
+2025-07-18 02:36:13.696 | ERROR    | core.audio_processor:speak_immediately:149 - Failed to speak text immediately: run loop already started
+2025-07-18 02:36:14.328 | INFO     | __main__:stop_camera:64 - Camera stopped
+2025-07-18 02:36:15.321 | DEBUG    | core.audio_processor:_listen_for_commands:295 - Listening for voice command...
+2025-07-18 02:36:18.195 | DEBUG    | core.audio_processor:_listen_for_commands:305 - Could not understand audio
+2025-07-18 02:36:18.211 | INFO     | core.audio_processor:_listen_for_commands:318 - Voice command listener stopped
+2025-07-18 02:36:19.347 | INFO     | core.audio_processor:stop:281 - Audio processor stopped
+2025-07-18 02:36:19.347 | INFO     | __main__:stop:244 - VisionGuide AI stopped
+2025-07-18 02:36:19.349 | INFO     | __main__:main:302 - VisionGuide AI shutdown complete
