@@ -23,6 +23,7 @@ class VisionGuideAI:
         self.running = False
         self.camera = None
         self.should_exit = False
+        self.last_description = ""
         
         # Initialize components
         self.object_detector = ObjectDetector(config.model.yolo_model_path)
@@ -33,7 +34,6 @@ class VisionGuideAI:
         
         # Threading
         self.detection_thread = None
-        self.audio_thread = None
         
         logger.info("VisionGuide AI initialized successfully")
     
@@ -107,14 +107,13 @@ class VisionGuideAI:
             return "Unable to process scene"
     
     def run_detection_loop(self):
-        """Main detection loop"""
+        """Main detection loop with keyboard controls"""
         last_announcement = time.time()
-        announcement_interval = 4.0  # seconds
+        announcement_interval = 5.0  # seconds
         
-        # Create window if debug mode is enabled
-        if config.debug_mode:
-            cv2.namedWindow('VisionGuide AI', cv2.WINDOW_NORMAL)
-            cv2.resizeWindow('VisionGuide AI', config.frame_width, config.frame_height)
+        # Create window
+        cv2.namedWindow('VisionGuide AI', cv2.WINDOW_NORMAL)
+        cv2.resizeWindow('VisionGuide AI', config.frame_width, config.frame_height)
         
         while self.running and not self.should_exit:
             try:
@@ -124,62 +123,91 @@ class VisionGuideAI:
                     time.sleep(0.1)
                     continue
                 
-                # Process frame periodically for audio
+                # Process frame periodically for automatic descriptions
                 current_time = time.time()
                 if current_time - last_announcement >= announcement_interval:
                     audio_description = self.process_frame(frame)
                     
                     # Skip empty descriptions
                     if audio_description and audio_description.strip() != "." and audio_description.strip() != "":
-                        logger.info(f"Processing audio: {audio_description}")
-                        
-                        # Queue audio for playback
+                        self.last_description = audio_description
                         self.audio_processor.speak_async(audio_description, AudioPriority.NORMAL)
-                        
-                        # Also log to console for debugging
-                        print(f"🔊 AUDIO: {audio_description}")
+                        logger.info(f"Auto description: {audio_description}")
                     
                     last_announcement = current_time
                 
-                # Display frame with detections (if debug mode)
-                if config.debug_mode:
-                    detected_objects = self.object_detector.detect_objects(
-                        frame, 
-                        config.model.confidence_threshold,
-                        config.model.iou_threshold
-                    )
-                    
-                    # Draw detections
-                    display_frame = self.object_detector.draw_detections(
-                        frame.copy(), detected_objects
-                    )
-                    
-                    # Add text overlay
-                    cv2.putText(display_frame, "VisionGuide AI - Press 'q' to quit", 
-                               (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
-                    
-                    # Add speaking indicator
-                    if self.audio_processor.is_speaking:
-                        cv2.putText(display_frame, "SPEAKING...", 
-                                   (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
-                    
-                    cv2.imshow('VisionGuide AI', display_frame)
+                # Display frame with detections
+                detected_objects = self.object_detector.detect_objects(
+                    frame, 
+                    config.model.confidence_threshold,
+                    config.model.iou_threshold
+                )
                 
-                # Check for keyboard input
+                # Draw detections
+                display_frame = self.object_detector.draw_detections(
+                    frame.copy(), detected_objects
+                )
+                
+                # Add control instructions
+                instructions = [
+                    "VisionGuide AI Controls:",
+                    "Q - Quit",
+                    "S - Manual description",
+                    "V - Voice command",
+                    "R - Repeat last",
+                    "T - Test audio",
+                    "SPACE - Stop talking"
+                ]
+                
+                y_offset = 30
+                for instruction in instructions:
+                    cv2.putText(display_frame, instruction, 
+                               (10, y_offset), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+                    y_offset += 25
+                
+                # Add speaking indicator
+                if self.audio_processor.is_speaking:
+                    cv2.putText(display_frame, "SPEAKING...", 
+                               (10, display_frame.shape[0] - 20), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
+                
+                cv2.imshow('VisionGuide AI', display_frame)
+                
+                # Handle keyboard input
                 key = cv2.waitKey(1) & 0xFF
+                
                 if key == ord('q') or key == ord('Q'):
                     logger.info("Quit key pressed")
                     self.should_exit = True
                     break
+                    
                 elif key == ord('s') or key == ord('S'):
                     # Manual scene description
                     audio_description = self.process_frame(frame)
                     if audio_description and audio_description.strip() != ".":
-                        logger.info("Manual scene description triggered")
+                        self.last_description = audio_description
                         self.audio_processor.speak_async(audio_description, AudioPriority.HIGH)
+                        logger.info("Manual description triggered")
+                        
+                elif key == ord('v') or key == ord('V'):
+                    # Voice command mode
+                    self.handle_voice_command(frame)
+                    
+                elif key == ord('r') or key == ord('R'):
+                    # Repeat last description
+                    if self.last_description:
+                        self.audio_processor.speak_async(self.last_description, AudioPriority.HIGH)
+                        logger.info("Repeating last description")
+                    else:
+                        self.audio_processor.speak_immediately("No previous description to repeat")
+                        
                 elif key == ord('t') or key == ord('T'):
                     # Test audio
                     self.audio_processor.test_audio()
+                    
+                elif key == ord(' '):  # Space key
+                    # Stop talking
+                    self.audio_processor.stop_speaking()
+                    logger.info("Speech stopped by user")
                 
                 # Small delay
                 time.sleep(0.03)
@@ -189,8 +217,46 @@ class VisionGuideAI:
                 time.sleep(0.1)
         
         # Clean up
-        if config.debug_mode:
-            cv2.destroyAllWindows()
+        cv2.destroyAllWindows()
+    
+    def handle_voice_command(self, frame: np.ndarray):
+        """Handle voice command input"""
+        try:
+            # Show listening indicator
+            self.audio_processor.speak_immediately("Listening for command")
+            
+            # Listen for command
+            command = self.audio_processor.listen_for_command()
+            
+            if command:
+                # Process command
+                action = self.audio_processor.process_voice_command(command)
+                
+                # Handle specific actions
+                if action == "describe_scene":
+                    audio_description = self.process_frame(frame)
+                    if audio_description and audio_description.strip() != ".":
+                        self.last_description = audio_description
+                        self.audio_processor.speak_async(audio_description, AudioPriority.HIGH)
+                        
+                elif action == "repeat_last":
+                    if self.last_description:
+                        self.audio_processor.speak_async(self.last_description, AudioPriority.HIGH)
+                    else:
+                        self.audio_processor.speak_immediately("No previous description to repeat")
+                        
+                elif action == "emergency":
+                    self.audio_processor.speak_immediately("Emergency mode activated. This feature will be implemented soon.")
+                    
+                elif action == "get_location":
+                    self.audio_processor.speak_immediately("Location services will be implemented soon.")
+                    
+            else:
+                self.audio_processor.speak_immediately("No command heard")
+                
+        except Exception as e:
+            logger.error(f"Voice command error: {e}")
+            self.audio_processor.speak_immediately("Voice command failed")
     
     def start(self):
         """Start the VisionGuide AI system"""
@@ -203,14 +269,12 @@ class VisionGuideAI:
         # Start audio processor
         self.audio_processor.start()
         
-        # Test audio first
-        time.sleep(1)
-        logger.info("Testing audio system...")
+        # Test audio
         self.audio_processor.test_audio()
+        time.sleep(2)
         
         # Welcome message
-        time.sleep(2)
-        self.audio_processor.speak_async("VisionGuide AI is ready. I will describe what I see every few seconds.", AudioPriority.HIGH)
+        self.audio_processor.speak_immediately("VisionGuide AI is ready. Press V for voice commands, S for manual description.")
         
         # Start detection thread
         self.detection_thread = threading.Thread(target=self.run_detection_loop)
@@ -228,7 +292,7 @@ class VisionGuideAI:
         # Goodbye message
         self.audio_processor.speak_immediately("VisionGuide AI is shutting down. Goodbye.")
         
-        # Wait for threads to finish
+        # Wait for thread to finish
         if self.detection_thread:
             self.detection_thread.join(timeout=5)
         
@@ -281,9 +345,9 @@ def main():
     try:
         # Start the system
         if vision_guide.start():
-            logger.info("VisionGuide AI is running. Press 'q' to quit, 's' for manual description, 't' to test audio.")
+            logger.info("VisionGuide AI is running.")
             
-            # Simple input loop
+            # Keep main thread alive
             while vision_guide.running and not vision_guide.should_exit:
                 try:
                     time.sleep(0.1)
