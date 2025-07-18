@@ -3,9 +3,9 @@ import speech_recognition as sr
 import threading
 import queue
 import time
+import subprocess
 from typing import Optional, Callable
 from loguru import logger
-import numpy as np
 from dataclasses import dataclass
 from enum import Enum
 from functools import total_ordering
@@ -48,14 +48,10 @@ class AudioProcessor:
         self.speech_queue = queue.Queue()
         self.is_speaking = False
         self.audio_thread = None
-        self.listening_thread = None
         
         # State
         self.running = False
         self.voice_commands_enabled = True
-        
-        # Thread-safe flag
-        self.tts_ready = threading.Event()
         
         # Initialize components
         self._initialize_tts()
@@ -66,7 +62,6 @@ class AudioProcessor:
     def _initialize_tts(self):
         """Initialize text-to-speech engine"""
         try:
-            # Initialize TTS engine
             self.tts_engine = pyttsx3.init()
             
             # Configure voice properties
@@ -75,12 +70,8 @@ class AudioProcessor:
                 voice_index = min(1, len(voices) - 1)
                 self.tts_engine.setProperty('voice', voices[voice_index].id)
             
-            # Set speech rate and volume
             self.tts_engine.setProperty('rate', 150)
             self.tts_engine.setProperty('volume', 1.0)
-            
-            # Set TTS ready flag
-            self.tts_ready.set()
             
             logger.info("TTS engine initialized successfully")
             
@@ -104,7 +95,6 @@ class AudioProcessor:
                    callback: Optional[Callable] = None):
         """Add text to speech queue for asynchronous playback"""
         if not text or text.strip() == "." or text.strip() == "":
-            logger.debug("Skipping empty or minimal text")
             return
         
         message = AudioMessage(
@@ -115,78 +105,50 @@ class AudioProcessor:
         )
         
         self.speech_queue.put(message)
-        logger.info(f"Added to speech queue: {text}")
     
     def speak_immediately(self, text: str, interrupt: bool = False):
-        """Speak text immediately using main thread"""
+        """Speak text immediately using Windows SAPI"""
         if not text or text.strip() == "." or text.strip() == "":
             return
         
         try:
-            # Wait for TTS to be ready
-            if not self.tts_ready.wait(timeout=5):
-                logger.error("TTS engine not ready")
-                return
-            
-            if interrupt and self.is_speaking:
-                self.tts_engine.stop()
-            
             self.is_speaking = True
-            logger.info(f"Speaking immediately: {text}")
+            logger.info(f"Speaking: {text}")
             
-            # Create a new TTS engine for immediate use
-            temp_engine = pyttsx3.init()
-            temp_engine.setProperty('rate', 150)
-            temp_engine.setProperty('volume', 1.0)
-            
-            temp_engine.say(text)
-            temp_engine.runAndWait()
+            # Use Windows SAPI for immediate speech
+            self._speak_with_sapi(text)
             
             self.is_speaking = False
-            logger.info("Immediate speech completed")
             
         except Exception as e:
-            logger.error(f"Failed to speak text immediately: {e}")
+            logger.error(f"Failed to speak text: {e}")
             self.is_speaking = False
     
-    def _speak_with_engine(self, text: str) -> bool:
-        """Safely speak text using TTS engine"""
+    def _speak_with_sapi(self, text: str) -> bool:
+        """Use Windows SAPI for TTS"""
         try:
-            # Create a new TTS engine for this thread
-            engine = pyttsx3.init()
+            # Escape text for PowerShell
+            escaped_text = text.replace('"', '""').replace("'", "''")
             
-            # Configure the engine
-            voices = engine.getProperty('voices')
-            if voices:
-                voice_index = min(1, len(voices) - 1)
-                engine.setProperty('voice', voices[voice_index].id)
+            # Create PowerShell command
+            ps_command = f'''
+            Add-Type -AssemblyName System.Speech
+            $synth = New-Object System.Speech.Synthesis.SpeechSynthesizer
+            $synth.Rate = 0
+            $synth.Volume = 100
+            $synth.Speak("{escaped_text}")
+            '''
             
-            engine.setProperty('rate', 150)
-            engine.setProperty('volume', 1.0)
+            # Execute PowerShell command
+            result = subprocess.run([
+                'powershell', '-Command', ps_command
+            ], capture_output=True, text=True, timeout=15)
             
-            # Speak the text
-            engine.say(text)
-            engine.runAndWait()
-            
-            # Clean up
-            engine.stop()
-            del engine
-            
-            return True
+            return result.returncode == 0
             
         except Exception as e:
-            logger.error(f"Speech engine error: {e}")
+            logger.error(f"SAPI TTS error: {e}")
             return False
-    
-    def stop_speaking(self):
-        """Stop current speech"""
-        try:
-            if self.tts_engine and self.is_speaking:
-                self.tts_engine.stop()
-                self.is_speaking = False
-                logger.info("Speech stopped")
-        except Exception as e:
-            logger.error(f"Failed to stop speech: {e}")
     
     def _audio_worker(self):
         """Audio processing worker thread"""
@@ -200,10 +162,8 @@ class AudioProcessor:
                 except queue.Empty:
                     continue
                 
-                # Skip if message is too old (except emergency)
-                if (message.priority != AudioPriority.EMERGENCY and 
-                    time.time() - message.timestamp > 15):
-                    logger.debug("Skipping old message")
+                # Skip if message is too old
+                if time.time() - message.timestamp > 15:
                     continue
                 
                 # Skip empty messages
@@ -214,13 +174,8 @@ class AudioProcessor:
                 self.is_speaking = True
                 logger.info(f"Speaking: {message.text}")
                 
-                # Use thread-safe speech method
-                success = self._speak_with_engine(message.text)
-                
-                if success:
-                    logger.info("Speech completed successfully")
-                else:
-                    logger.error("Speech failed")
+                # Use Windows SAPI for speech
+                self._speak_with_sapi(message.text)
                 
                 self.is_speaking = False
                 
@@ -234,7 +189,7 @@ class AudioProcessor:
                 # Mark task as done
                 self.speech_queue.task_done()
                 
-                # Small delay to prevent audio overlap
+                # Small delay
                 time.sleep(0.2)
                 
             except Exception as e:
@@ -243,6 +198,86 @@ class AudioProcessor:
                 time.sleep(0.5)
         
         logger.info("Audio worker stopped")
+    
+    def listen_for_command(self) -> str:
+        """Listen for a single voice command (push-to-talk)"""
+        try:
+            logger.info("Listening for voice command...")
+            
+            with self.microphone as source:
+                # Listen for audio
+                audio = self.recognizer.listen(source, timeout=5, phrase_time_limit=5)
+            
+            # Recognize speech
+            command = self.recognizer.recognize_google(audio, language='en-US').lower()
+            logger.info(f"Voice command detected: '{command}'")
+            
+            return command
+            
+        except sr.WaitTimeoutError:
+            logger.info("No speech detected within timeout")
+            return ""
+        except sr.UnknownValueError:
+            logger.info("Could not understand audio")
+            return ""
+        except sr.RequestError as e:
+            logger.error(f"Speech recognition error: {e}")
+            return ""
+        except Exception as e:
+            logger.error(f"Voice command error: {e}")
+            return ""
+    
+    def process_voice_command(self, command: str) -> str:
+        """Process voice command and return response"""
+        if not command:
+            return ""
+        
+        logger.info(f"Processing command: {command}")
+        
+        if "what do you see" in command or "describe scene" in command:
+            return "describe_scene"
+            
+        elif "stop talking" in command or "be quiet" in command:
+            self.stop_speaking()
+            self.speak_immediately("Okay, I'll be quiet")
+            return "stop_talking"
+            
+        elif "repeat" in command or "say again" in command:
+            return "repeat_last"
+            
+        elif "help" in command or "emergency" in command:
+            return "emergency"
+            
+        elif "where am i" in command or "location" in command:
+            return "get_location"
+            
+        elif "volume up" in command:
+            self.speak_immediately("Volume increased")
+            return "volume_up"
+            
+        elif "volume down" in command:
+            self.speak_immediately("Volume decreased")
+            return "volume_down"
+            
+        else:
+            self.speak_immediately("I didn't understand that command")
+            return "unknown"
+    
+    def stop_speaking(self):
+        """Stop current speech"""
+        try:
+            # Clear the speech queue
+            while not self.speech_queue.empty():
+                try:
+                    self.speech_queue.get_nowait()
+                except queue.Empty:
+                    break
+            
+            self.is_speaking = False
+            logger.info("Speech stopped and queue cleared")
+            
+        except Exception as e:
+            logger.error(f"Failed to stop speech: {e}")
     
     def start(self):
         """Start audio processing"""
@@ -256,12 +291,6 @@ class AudioProcessor:
         self.audio_thread.daemon = True
         self.audio_thread.start()
         
-        # Start voice command listening thread
-        if self.voice_commands_enabled:
-            self.listening_thread = threading.Thread(target=self._listen_for_commands)
-            self.listening_thread.daemon = True
-            self.listening_thread.start()
-        
         logger.info("Audio processor started")
     
     def stop(self):
@@ -271,73 +300,12 @@ class AudioProcessor:
         # Stop current speech
         self.stop_speaking()
         
-        # Wait for threads to finish
+        # Wait for thread to finish
         if self.audio_thread:
             self.audio_thread.join(timeout=5)
         
-        if self.listening_thread:
-            self.listening_thread.join(timeout=5)
-        
         logger.info("Audio processor stopped")
-    
-    def _listen_for_commands(self):
-        """Listen for voice commands"""
-        logger.info("Voice command listener started")
-        
-        while self.running:
-            try:
-                # Don't listen while speaking
-                if self.is_speaking:
-                    time.sleep(0.1)
-                    continue
-                
-                with self.microphone as source:
-                    logger.debug("Listening for voice command...")
-                    audio = self.recognizer.listen(source, timeout=2, phrase_time_limit=3)
-                
-                # Recognize speech
-                try:
-                    command = self.recognizer.recognize_google(audio, language='en-US').lower()
-                    logger.info(f"Voice command detected: '{command}'")
-                    self._process_voice_command(command)
-                    
-                except sr.UnknownValueError:
-                    logger.debug("Could not understand audio")
-                    pass
-                except sr.RequestError as e:
-                    logger.error(f"Speech recognition service error: {e}")
-                    time.sleep(1)
-                    
-            except sr.WaitTimeoutError:
-                logger.debug("No speech detected")
-                pass
-            except Exception as e:
-                logger.error(f"Voice command listening error: {e}")
-                time.sleep(1)
-        
-        logger.info("Voice command listener stopped")
-    
-    def _process_voice_command(self, command: str):
-        """Process recognized voice command"""
-        logger.info(f"Processing voice command: {command}")
-        
-        if "what do you see" in command or "describe scene" in command:
-            self.speak_immediately("Analyzing current scene", interrupt=True)
-            
-        elif "stop talking" in command or "be quiet" in command:
-            self.stop_speaking()
-            self._clear_speech_queue()
-            self.speak_immediately("Okay, I'll be quiet")
-            
-        elif "repeat" in command:
-            self.speak_immediately("Repeating last description")
-            
-        elif "help" in command or "emergency" in command:
-            self.speak_immediately("Emergency mode activated", interrupt=True)
-            
-        elif "where am i" in command or "location" in command:
-            self.speak_immediately("Getting your current location")
-    
+
     def _clear_speech_queue(self):
         """Clear speech queue"""
         while not self.speech_queue.empty():
@@ -368,8 +336,8 @@ class AudioProcessor:
     
     def test_audio(self):
         """Test audio output"""
-        logger.info("Testing audio output...")
-        self.speak_immediately("VisionGuide AI audio test. If you can hear this, audio is working correctly.")
+        self.speak_immediately("VisionGuide AI audio test. Audio is working correctly.")
+
 
     
     def _clear_non_emergency_queue(self):
@@ -419,78 +387,78 @@ class AudioProcessor:
         else:
             logger.warning(f"Invalid voice index: {voice_index}")
 
-# Audio utilities
-def create_spatial_audio_description(objects: list, user_facing: str = "north") -> str:
-    """
-    Create spatial audio description
-    
-    Args:
-        objects: List of detected objects with position info
-        user_facing: Direction user is facing
+    # Audio utilities
+    def create_spatial_audio_description(objects: list, user_facing: str = "north") -> str:
+        """
+        Create spatial audio description
         
-    Returns:
-        Spatial audio description
-    """
-    descriptions = []
-    
-    for obj in objects:
-        # Convert object position to spatial description
-        direction = obj.get('direction', 'unknown')
-        distance = obj.get('distance', 0)
-        name = obj.get('name', 'object')
+        Args:
+            objects: List of detected objects with position info
+            user_facing: Direction user is facing
+            
+        Returns:
+            Spatial audio description
+        """
+        descriptions = []
         
-        # Create natural spatial description
-        if direction == 'center':
-            spatial_desc = f"{name} directly ahead"
+        for obj in objects:
+            # Convert object position to spatial description
+            direction = obj.get('direction', 'unknown')
+            distance = obj.get('distance', 0)
+            name = obj.get('name', 'object')
+            
+            # Create natural spatial description
+            if direction == 'center':
+                spatial_desc = f"{name} directly ahead"
+            elif direction == 'left':
+                spatial_desc = f"{name} to your left"
+            elif direction == 'right':
+                spatial_desc = f"{name} to your right"
+            else:
+                spatial_desc = f"{name} nearby"
+            
+            if distance > 0:
+                if distance < 2:
+                    spatial_desc += " very close"
+                elif distance < 5:
+                    spatial_desc += f" {distance:.0f} steps away"
+                else:
+                    spatial_desc += " far away"
+            
+            descriptions.append(spatial_desc)
+        
+        return ". ".join(descriptions)
+
+    def format_navigation_instruction(instruction: dict) -> str:
+        """
+        Format navigation instruction for audio
+        
+        Args:
+            instruction: Navigation instruction dict
+            
+        Returns:
+            Formatted audio instruction
+        """
+        direction = instruction.get('direction', '')
+        distance = instruction.get('distance', 0)
+        landmark = instruction.get('landmark', '')
+        
+        if direction == 'straight':
+            base = "Continue straight"
         elif direction == 'left':
-            spatial_desc = f"{name} to your left"
+            base = "Turn left"
         elif direction == 'right':
-            spatial_desc = f"{name} to your right"
+            base = "Turn right"
         else:
-            spatial_desc = f"{name} nearby"
+            base = "Continue"
         
         if distance > 0:
-            if distance < 2:
-                spatial_desc += " very close"
-            elif distance < 5:
-                spatial_desc += f" {distance:.0f} steps away"
+            if distance < 10:
+                base += f" for {distance:.0f} steps"
             else:
-                spatial_desc += " far away"
+                base += f" for {distance:.0f} meters"
         
-        descriptions.append(spatial_desc)
-    
-    return ". ".join(descriptions)
-
-def format_navigation_instruction(instruction: dict) -> str:
-    """
-    Format navigation instruction for audio
-    
-    Args:
-        instruction: Navigation instruction dict
+        if landmark:
+            base += f" towards {landmark}"
         
-    Returns:
-        Formatted audio instruction
-    """
-    direction = instruction.get('direction', '')
-    distance = instruction.get('distance', 0)
-    landmark = instruction.get('landmark', '')
-    
-    if direction == 'straight':
-        base = "Continue straight"
-    elif direction == 'left':
-        base = "Turn left"
-    elif direction == 'right':
-        base = "Turn right"
-    else:
-        base = "Continue"
-    
-    if distance > 0:
-        if distance < 10:
-            base += f" for {distance:.0f} steps"
-        else:
-            base += f" for {distance:.0f} meters"
-    
-    if landmark:
-        base += f" towards {landmark}"
-    
-    return base
+        return base
