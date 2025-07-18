@@ -14,6 +14,7 @@ sys.path.append(str(Path(__file__).parent))
 from core.object_detector import ObjectDetector, PersonalizedObjectDetector
 from core.depth_estimator import DepthEstimator
 from core.scene_analyzer import SceneAnalyzer, format_for_audio
+from core.scene_tracker import SceneTracker
 from core.audio_processor import AudioProcessor, AudioPriority
 from utils.config import config
 
@@ -29,11 +30,17 @@ class VisionGuideAI:
         self.object_detector = ObjectDetector(config.model.yolo_model_path)
         self.depth_estimator = DepthEstimator(model_type=config.model.depth_model_type)
         self.scene_analyzer = SceneAnalyzer()
+        self.scene_tracker = SceneTracker()  # NEW: Smart scene tracker
         self.audio_processor = AudioProcessor()
         self.personalized_detector = PersonalizedObjectDetector()
         
         # Threading
         self.detection_thread = None
+        
+        # Smart announcement settings
+        self.auto_announce_changes = True
+        self.periodic_summary_interval = 30.0  # Summary every 30 seconds
+        self.last_summary_time = 0
         
         logger.info("VisionGuide AI initialized successfully")
     
@@ -107,9 +114,7 @@ class VisionGuideAI:
             return "Unable to process scene"
     
     def run_detection_loop(self):
-        """Main detection loop with keyboard controls"""
-        last_announcement = time.time()
-        announcement_interval = 5.0  # seconds
+        """Main detection loop with smart announcements"""
         
         # Create window
         cv2.namedWindow('VisionGuide AI', cv2.WINDOW_NORMAL)
@@ -123,39 +128,71 @@ class VisionGuideAI:
                     time.sleep(0.1)
                     continue
                 
-                # Process frame periodically for automatic descriptions
-                current_time = time.time()
-                if current_time - last_announcement >= announcement_interval:
-                    audio_description = self.process_frame(frame)
-                    
-                    # Skip empty descriptions
-                    if audio_description and audio_description.strip() != "." and audio_description.strip() != "":
-                        self.last_description = audio_description
-                        self.audio_processor.speak_async(audio_description, AudioPriority.NORMAL)
-                        logger.info(f"Auto description: {audio_description}")
-                    
-                    last_announcement = current_time
-                
-                # Display frame with detections
+                # Detect objects
                 detected_objects = self.object_detector.detect_objects(
                     frame, 
                     config.model.confidence_threshold,
                     config.model.iou_threshold
                 )
                 
-                # Draw detections
+                # Estimate depth for detected objects
+                depth_map = self.depth_estimator.estimate_depth(frame)
+                for obj in detected_objects:
+                    obj.distance = self.depth_estimator.get_object_distance(
+                        depth_map, obj.bbox, config.navigation.step_size
+                    )
+                
+                # Update scene tracker and get changes
+                changes = self.scene_tracker.update_scene(detected_objects)
+                
+                # Announce meaningful changes only
+                if changes and self.auto_announce_changes:
+                    if self.scene_tracker.should_announce():
+                        # Filter out rapid changes and only keep meaningful ones
+                        meaningful_changes = []
+                        for change_type, message in changes.items():
+                            if message and not self._is_rapid_change(change_type):
+                                meaningful_changes.append(message)
+                        
+                        if meaningful_changes:
+                            # Limit to 2 most important changes
+                            announcement = ". ".join(meaningful_changes[:2])
+                            self.audio_processor.speak_async(announcement, AudioPriority.HIGH)
+                            self.last_description = announcement
+                            logger.info(f"Smart announcement: {announcement}")
+                
+                # Periodic scene summary (less frequent)
+                current_time = time.time()
+                if current_time - self.last_summary_time >= self.periodic_summary_interval:
+                    summary = self.scene_tracker.get_scene_summary()
+                    if summary and "analyzing" not in summary.lower():
+                        self.audio_processor.speak_async(f"Scene update: {summary}", AudioPriority.LOW)
+                        logger.info(f"Scene summary: {summary}")
+                    self.last_summary_time = current_time
+                
+                # Display frame with detections
                 display_frame = self.object_detector.draw_detections(
                     frame.copy(), detected_objects
                 )
                 
+                # Add distance information to display
+                for obj in detected_objects:
+                    if obj.distance:
+                        x1, y1, x2, y2 = obj.bbox
+                        distance_text = f"{obj.distance:.1f} steps"
+                        cv2.putText(display_frame, distance_text, 
+                                (x1, y2 + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 0), 1)
+                
                 # Add control instructions
                 instructions = [
-                    "VisionGuide AI Controls:",
+                    "VisionGuide AI - Smart Mode:",
                     "Q - Quit",
                     "S - Manual description",
                     "V - Voice command",
                     "R - Repeat last",
                     "T - Test audio",
+                    "A - Toggle auto-announce",
+                    "C - Current scene summary",
                     "SPACE - Stop talking"
                 ]
                 
@@ -164,6 +201,11 @@ class VisionGuideAI:
                     cv2.putText(display_frame, instruction, 
                                (10, y_offset), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
                     y_offset += 25
+                
+                # Add mode indicator
+                mode_text = "AUTO-ANNOUNCE: ON" if self.auto_announce_changes else "AUTO-ANNOUNCE: OFF"
+                cv2.putText(display_frame, mode_text, 
+                           (10, display_frame.shape[0] - 50), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2)
                 
                 # Add speaking indicator
                 if self.audio_processor.is_speaking:
@@ -204,6 +246,19 @@ class VisionGuideAI:
                     # Test audio
                     self.audio_processor.test_audio()
                     
+                elif key == ord('a') or key == ord('A'):
+                    # Toggle auto-announce
+                    self.auto_announce_changes = not self.auto_announce_changes
+                    status = "enabled" if self.auto_announce_changes else "disabled"
+                    self.audio_processor.speak_immediately(f"Auto-announce {status}")
+                    logger.info(f"Auto-announce {status}")
+                    
+                elif key == ord('c') or key == ord('C'):
+                    # Current scene summary
+                    summary = self.scene_tracker.get_scene_summary()
+                    self.audio_processor.speak_async(summary, AudioPriority.HIGH)
+                    logger.info(f"Manual scene summary: {summary}")
+                    
                 elif key == ord(' '):  # Space key
                     # Stop talking
                     self.audio_processor.stop_speaking()
@@ -218,6 +273,12 @@ class VisionGuideAI:
         
         # Clean up
         cv2.destroyAllWindows()
+
+    def _is_rapid_change(self, change_type: str) -> bool:
+        """Check if this is a rapid change that should be filtered"""
+        # Filter out rapid appearance/disappearance cycles
+        return "gone_" in change_type or "new_" in change_type
+
     
     def handle_voice_command(self, frame: np.ndarray):
         """Handle voice command input"""
@@ -234,10 +295,9 @@ class VisionGuideAI:
                 
                 # Handle specific actions
                 if action == "describe_scene":
-                    audio_description = self.process_frame(frame)
-                    if audio_description and audio_description.strip() != ".":
-                        self.last_description = audio_description
-                        self.audio_processor.speak_async(audio_description, AudioPriority.HIGH)
+                    summary = self.scene_tracker.get_scene_summary()
+                    self.audio_processor.speak_async(summary, AudioPriority.HIGH)
+                    self.last_description = summary
                         
                 elif action == "repeat_last":
                     if self.last_description:
@@ -274,7 +334,7 @@ class VisionGuideAI:
         time.sleep(2)
         
         # Welcome message
-        self.audio_processor.speak_immediately("VisionGuide AI is ready. Press V for voice commands, S for manual description.")
+        self.audio_processor.speak_immediately("VisionGuide AI Smart Mode is ready. I will only announce when things change.")
         
         # Start detection thread
         self.detection_thread = threading.Thread(target=self.run_detection_loop)
@@ -345,7 +405,7 @@ def main():
     try:
         # Start the system
         if vision_guide.start():
-            logger.info("VisionGuide AI is running.")
+            logger.info("VisionGuide AI Smart Mode is running.")
             
             # Keep main thread alive
             while vision_guide.running and not vision_guide.should_exit:
