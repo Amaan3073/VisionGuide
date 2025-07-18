@@ -128,14 +128,37 @@ class SceneTracker:
     
     def _format_stable_object(self, obj) -> str:
         """Format announcement for stable new object"""
-        distance_text = f" {obj.distance:.0f} steps away" if obj.distance and obj.distance > 0 else ""
+        distance_text = ""
+        if obj.distance and obj.distance > 0:
+            if obj.distance < 1.5:
+                distance_text = f" very close"
+            elif obj.distance < 3.0:
+                distance_text = f" {obj.distance:.0f} steps away"
+            elif obj.distance < 6.0:
+                distance_text = f" {obj.distance:.0f} steps away"
+            else:
+                distance_text = f" far away"
+        
         direction_text = f" {self._format_direction(obj.direction)}" if obj.direction else ""
         return f"There's a {obj.class_name}{distance_text}{direction_text}"
-    
+
     def _format_object_change(self, obj, changes: List[str]) -> str:
         """Format announcement for object change"""
         change_text = " and ".join(changes)
-        return f"The {obj.class_name} is {change_text}"
+        
+        # Add distance context for movement
+        if obj.distance and obj.distance > 0:
+            if obj.distance < 2.0:
+                distance_context = " close by"
+            elif obj.distance > 6.0:
+                distance_context = " in the distance"
+            else:
+                distance_context = ""
+        else:
+            distance_context = ""
+        
+        return f"The {obj.class_name} is {change_text}{distance_context}"
+
     
     def _format_disappeared_object(self, tracked: TrackedObject) -> str:
         """Format announcement for disappeared object"""

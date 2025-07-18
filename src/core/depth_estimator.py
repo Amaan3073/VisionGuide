@@ -14,11 +14,30 @@ class DepthEstimator:
         self.model = None
         self.transform = None
         
-        # Calibration parameters for distance estimation
-        self.baseline_distance = 2.0  # meters (known distance for calibration)
-        self.baseline_depth_value = 0.5  # corresponding depth value
-        self.min_distance = 0.5  # minimum distance in meters
-        self.max_distance = 10.0  # maximum distance in meters
+        # Enhanced calibration parameters
+        self.focal_length = 525.0  # Approximate focal length for webcam
+        self.baseline = 0.1  # Baseline in meters
+        self.depth_scale = 1000.0  # Scale factor for depth values
+        
+        # Distance mapping parameters
+        self.min_distance = 0.3  # meters
+        self.max_distance = 15.0  # meters
+        self.step_size = 0.75  # meters per step
+        
+        # Calibration lookup table for better accuracy
+        self.distance_map = {
+            # depth_value_range: actual_distance_meters
+            (0, 0.1): 0.5,
+            (0.1, 0.2): 1.0,
+            (0.2, 0.3): 1.5,
+            (0.3, 0.4): 2.0,
+            (0.4, 0.5): 2.5,
+            (0.5, 0.6): 3.0,
+            (0.6, 0.7): 4.0,
+            (0.7, 0.8): 5.0,
+            (0.8, 0.9): 7.0,
+            (0.9, 1.0): 10.0,
+        }
         
         self._load_model()
         
@@ -50,7 +69,7 @@ class DepthEstimator:
     def estimate_depth(self, frame: np.ndarray) -> np.ndarray:
         """Estimate depth map from input frame"""
         if self.model is None or self.transform is None:
-            return np.ones(frame.shape[:2]) * 2.0  # Return default depth
+            return np.ones(frame.shape[:2]) * 0.5  # Return default depth
         
         try:
             # Convert BGR to RGB
@@ -72,14 +91,35 @@ class DepthEstimator:
                     align_corners=False,
                 ).squeeze()
             
-            # Convert to numpy
+            # Convert to numpy and normalize
             depth_map = prediction.cpu().numpy()
+            
+            # Normalize depth map to 0-1 range
+            depth_map = self._normalize_depth(depth_map)
             
             return depth_map
             
         except Exception as e:
             logger.error(f"Depth estimation failed: {e}")
-            return np.ones(frame.shape[:2]) * 2.0
+            return np.ones(frame.shape[:2]) * 0.5
+    
+    def _normalize_depth(self, depth_map: np.ndarray) -> np.ndarray:
+        """Normalize depth map to 0-1 range"""
+        # Remove outliers
+        depth_map = np.clip(depth_map, 
+                           np.percentile(depth_map, 2), 
+                           np.percentile(depth_map, 98))
+        
+        # Normalize to 0-1
+        depth_min = np.min(depth_map)
+        depth_max = np.max(depth_map)
+        
+        if depth_max > depth_min:
+            depth_map = (depth_map - depth_min) / (depth_max - depth_min)
+        else:
+            depth_map = np.ones_like(depth_map) * 0.5
+        
+        return depth_map
     
     def get_object_distance(self, depth_map: np.ndarray, 
                            bbox: Tuple[int, int, int, int],
@@ -94,66 +134,88 @@ class DepthEstimator:
             x2, y2 = min(w, x2), min(h, y2)
             
             if x2 <= x1 or y2 <= y1:
-                return 2.0  # Default distance
+                return 3.0  # Default distance in steps
             
             # Extract depth values in bounding box
             roi_depth = depth_map[y1:y2, x1:x2]
             
-            # Use median of central region (more stable)
+            # Use center region for more stable depth estimation
             center_h, center_w = roi_depth.shape
-            center_y1, center_y2 = center_h//4, 3*center_h//4
-            center_x1, center_x2 = center_w//4, 3*center_w//4
+            pad_h, pad_w = center_h // 4, center_w // 4
             
-            if center_y2 > center_y1 and center_x2 > center_x1:
-                center_roi = roi_depth[center_y1:center_y2, center_x1:center_x2]
-                median_depth = np.median(center_roi)
+            if center_h > 2 * pad_h and center_w > 2 * pad_w:
+                center_roi = roi_depth[pad_h:center_h-pad_h, pad_w:center_w-pad_w]
+                if center_roi.size > 0:
+                    # Use 25th percentile for more stable reading (excludes outliers)
+                    depth_value = np.percentile(center_roi, 25)
+                else:
+                    depth_value = np.median(roi_depth)
             else:
-                median_depth = np.median(roi_depth)
+                depth_value = np.median(roi_depth)
             
             # Convert to real-world distance
-            distance_meters = self._depth_to_distance(median_depth)
+            distance_meters = self._depth_to_distance(depth_value)
             
             # Convert to steps
             distance_steps = distance_meters / step_size
+            
+            # Round to reasonable precision
+            distance_steps = round(distance_steps, 1)
             
             return max(0.5, distance_steps)  # Minimum 0.5 steps
             
         except Exception as e:
             logger.error(f"Distance calculation failed: {e}")
-            return 2.0
+            return 3.0
     
     def _depth_to_distance(self, depth_value: float) -> float:
-        """Convert MiDaS depth value to real-world distance"""
+        """Convert normalized depth value to real-world distance"""
         try:
-            # MiDaS outputs inverse depth, so larger values = closer objects
-            # Normalize and invert
-            if depth_value <= 0:
+            # Clamp depth value to valid range
+            depth_value = max(0.0, min(1.0, depth_value))
+            
+            # Use lookup table for better accuracy
+            for (min_depth, max_depth), distance in self.distance_map.items():
+                if min_depth <= depth_value < max_depth:
+                    return distance
+            
+            # Fallback: inverse relationship with scaling
+            if depth_value < 0.05:
+                return self.min_distance
+            elif depth_value > 0.95:
                 return self.max_distance
-            
-            # Calibrated conversion (adjust these values based on your setup)
-            # This is a simplified model - you may need to calibrate with known distances
-            
-            # Scale factor based on typical MiDaS output range
-            normalized_depth = depth_value / 10.0  # Normalize typical MiDaS range
-            
-            # Inverse relationship with clamping
-            if normalized_depth > 1.0:
-                distance = self.min_distance + (2.0 - normalized_depth) * 0.5
             else:
-                distance = self.min_distance + (1.0 - normalized_depth) * 5.0
-            
-            # Clamp to reasonable range
-            distance = max(self.min_distance, min(distance, self.max_distance))
-            
-            return distance
+                # Logarithmic mapping for better distribution
+                # Smaller depth values (closer to 0) = closer objects
+                # Larger depth values (closer to 1) = farther objects
+                distance = self.min_distance + (1 - depth_value) * (self.max_distance - self.min_distance)
+                
+                # Apply logarithmic scaling for more realistic distances
+                distance = self.min_distance + (distance - self.min_distance) ** 1.5
+                
+                return min(self.max_distance, max(self.min_distance, distance))
             
         except Exception as e:
             logger.error(f"Depth conversion failed: {e}")
             return 2.0
     
-    def calibrate_depth(self, frame: np.ndarray, known_distance: float, 
-                       bbox: Tuple[int, int, int, int]):
-        """Calibrate depth estimation with known distance"""
+    def get_distance_category(self, distance_steps: float) -> str:
+        """Get distance category for better user feedback"""
+        if distance_steps < 1.0:
+            return "very close"
+        elif distance_steps < 2.0:
+            return "close"
+        elif distance_steps < 4.0:
+            return "nearby"
+        elif distance_steps < 8.0:
+            return "moderate distance"
+        else:
+            return "far away"
+    
+    def calibrate_with_known_object(self, frame: np.ndarray, 
+                                   bbox: Tuple[int, int, int, int],
+                                   known_distance: float):
+        """Calibrate depth estimation with a known object distance"""
         try:
             depth_map = self.estimate_depth(frame)
             x1, y1, x2, y2 = bbox
@@ -161,26 +223,25 @@ class DepthEstimator:
             roi_depth = depth_map[y1:y2, x1:x2]
             measured_depth = np.median(roi_depth)
             
-            # Update calibration parameters
-            self.baseline_distance = known_distance
-            self.baseline_depth_value = measured_depth
+            # Update calibration
+            logger.info(f"Calibration: {known_distance}m object has depth value {measured_depth:.3f}")
             
-            logger.info(f"Depth calibrated: {known_distance}m = {measured_depth} depth units")
+            # You can use this information to adjust the distance mapping
+            return measured_depth
             
         except Exception as e:
             logger.error(f"Calibration failed: {e}")
+            return None
     
     def visualize_depth(self, depth_map: np.ndarray) -> np.ndarray:
         """Create visualization of depth map"""
-        # Normalize depth map
-        depth_normalized = cv2.normalize(depth_map, None, 0, 255, cv2.NORM_MINMAX)
-        depth_normalized = depth_normalized.astype(np.uint8)
+        # Normalize depth map for visualization
+        depth_normalized = (depth_map * 255).astype(np.uint8)
         
-        # Apply colormap
+        # Apply colormap (closer = red, farther = blue)
         depth_colored = cv2.applyColorMap(depth_normalized, cv2.COLORMAP_JET)
         
         return depth_colored
-
 
     def _load_fallback_model(self):
         """Load a fallback depth estimation model"""
